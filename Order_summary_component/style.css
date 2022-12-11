@@ -1,0 +1,191 @@
+/* Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    width: 100%;
+    height: 100%;
+}
+
+img,
+svg,
+picture {
+    display: block;
+    width: 100%;
+}
+
+/* Custom Properties */
+:root {
+    --cl-primary-paleB: hsl(225, 100%, 94%);
+    --cl-primary-brightB: hsl(245, 75%, 52%);
+
+    --cl-neutral-white: hsl(225, 100%, 100%);
+    --cl-neutral-bright: hsl(225, 100%, 98%);
+    --cl-neutral-medium: hsl(224, 23%, 55%);
+    --cl-neutral-dark: hsl(223, 47%, 23%);
+    --cl-neutral-shadow-black: rgba(0, 0, 0, .1);
+    --cl-hover-pale-darkblue: hsl(245, 83%, 68%);
+    
+    --ff-400: 'Red Hat Display', sans-serif;
+    
+    --fs-400: 1.4rem;
+    --fs-700: 2.2rem;
+
+    --fw-400: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+}
+
+/* General styles */
+body {
+    background-color: var(--cl-primary-paleB);
+    font-family: var(--ff-400);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    line-height: 1.4;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-900);
+}
+
+a {
+    text-decoration: none;
+    font-size: var(--fs-400);
+}
+
+/* Specific styles */
+.background {
+    position: absolute;
+    z-index: 0;
+    height: 200px;
+}
+
+.background > * {
+    height: 200px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    height: 90vh;
+    width: 90vw;
+    min-width: 300px;
+    max-width: 380px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 15px 10px -3px var(--cl-neutral-shadow-black);
+    
+}
+
+.card-content {
+    background-color: var(--cl-neutral-white);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content > * {
+    margin-bottom: 2rem;
+}
+
+.main-title {
+    text-align: center;
+    color: var(--cl-neutral-dark);
+}
+
+.main-content {
+    text-align: center;
+    color: var(--cl-neutral-medium);
+    padding: 0 1rem;
+}
+
+.plan-info {
+    height: fit-content;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--cl-neutral-bright);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.plan-info > * {
+    align-self: center;
+}
+
+.plan-info img {
+    width: 4rem;
+}
+
+.plan-info-price p:first-of-type {
+    font-weight: var(--fw-900);
+    color: var(--cl-neutral-dark);
+}
+
+.plan-info-price p {
+    color: var(--cl-neutral-medium);
+}
+
+.change-button {
+    text-align: right;
+    color: var(--cl-primary-brightB);
+    text-decoration: underline;
+    font-weight: var(--fw-700);
+    cursor: pointer;
+    transition: color 300ms;
+}
+
+.change-button:hover {
+    color: var(--cl-hover-pale-darkblue);
+    text-decoration: none;
+}
+
+.proceed-btn {
+    width: 100%;
+    height: 4.5rem;
+    border: none;
+    background-color: var(--cl-primary-brightB);
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 2px var(--cl-primary-paleB);
+    cursor: pointer;
+    transition: background-color 200ms ease-in;
+}
+
+.proceed-btn a {
+    color: var(--cl-neutral-white);
+    font-weight: var(--fw-700);
+}
+
+.proceed-btn:hover {
+    background-color: var(--cl-hover-pale-darkblue);
+}
+
+.cancel-order {
+    color: var(--cl-neutral-medium);
+    font-weight: var(--fw-700);
+    transition: color 200ms;
+}
+
+.cancel-order:hover {
+    color: var(--cl-neutral-dark);
+}

@@ -1,0 +1,148 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+  }
+
+/* Custom properties */
+
+:root{
+    --cl-primary-cyan: hsl(158, 36%, 37%);
+    --cl-primary-cream: hsl(30, 38%, 92%);
+    --cl-neutral-vdblue: hsl(212, 21%, 14%);
+    --cl-neutral-dgblue: hsl(228, 12%, 48%);
+    --cl-neutral-white: hsl(0, 0%, 100%);
+    --cl-btn-active: hsl(156, 41%, 18%);
+
+    --fs-normal: 1.4rem;
+    --fs-big: 3rem;
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+
+    --ff-normal: 'Montserrat', sans-serif;
+    --ff-heading: 'Fraunces', sans-serif;
+}
+
+body {
+    background-color: var(--cl-primary-cream);
+    font-family: var(--ff-normal);
+    line-height: 1.5;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-big);
+    font-weight: var(--fw-bold);
+}
+
+p {
+    color: var(--cl-neutral-dgblue);
+    font-weight: var(--fw-normal);
+    font-size: var(--fs-normal);
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    min-width: 350px;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 1rem;
+    overflow: hidden;
+    background-color: var(--cl-neutral-white);
+}
+
+.card-info {
+    --mrg-btm: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.card-info__before-title {
+    letter-spacing: .5rem;
+    margin-bottom: var(--mrg-btm);
+}
+
+.card-info__main-title {
+    line-height: 1;
+    margin-bottom: var(--mrg-btm);
+}
+
+.card-info__main-description {
+    font-size: var(--fs-normal);
+    margin-bottom: var(--mrg-btm);
+}
+
+.card-info__prices {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: var(--mrg-btm);
+}
+
+.prices__new {
+    color: var(--cl-primary-cyan);
+}
+
+.prices__old {
+    text-decoration: line-through;
+}
+
+.card-info__button {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: none;
+    background-color: var(--cl-primary-cyan);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button__icon {
+    object-fit: unset;
+    height: initial;
+    border-radius: 0;
+}
+
+.button__text {
+    color: var(--cl-neutral-white);
+    font-weight: var(--fw-bold);
+}
+
+.card-info__button:hover,
+.card-info__button:active {
+    background-color: var(--cl-btn-active);
+}
+
