@@ -125,6 +125,7 @@ a {
 }
 
 .card__title:hover {
+    cursor:pointer;
     color: var(--cl-primary-500);
 }
 
