@@ -1,0 +1,204 @@
+*, *::before, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img,
+svg,
+picture {
+    display: block;
+    width: 100%;
+}
+
+/* Custom Properties */
+:root {
+    --cl-primary-400: hsl(215, 51%, 70%);
+    --cl-primary-500: hsl(178, 100%, 70%);
+    --cl-primary-500-a: rgba(102, 255, 250, 0.5);
+    
+    --cl-neutral-400: hsl(0, 0%, 100%);
+    --cl-neutral-500: hsl(215, 32%, 27%);
+    --cl-neutral-700: hsl(216, 50%, 16%);
+    --cl-neutral-900: hsl(217, 54%, 11%);
+
+    --fs-400: 1.8rem;
+    --fs-700: 2.5rem;
+
+    --fw-400: 300;
+    --fw-500: 400;
+    --fw-700: 600;
+
+    --ff-400: 'Outfit', sans-serif;
+}
+
+/* General styles */
+body {
+    font-family: var(--ff-400);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cl-neutral-900);
+}
+
+h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+}
+
+p {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* styles */
+
+.card {
+    width: 350px;
+    max-height: 600px;
+    background-color: var(--cl-neutral-700);
+    border-radius: 15px;
+    padding: 25px;
+
+    box-shadow: 0 30px 10px 25px hsl(217, 54%, 9%), 0 30px 20px 40px hsl(217, 54%, 10%);
+}
+
+.card__image-container {
+    --figure-size: 300px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--figure-size);
+    width: var(--figure-size);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.image-container__main {
+    position: absolute;
+}
+
+.image-container__overlay-color {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--cl-primary-500-a);
+    display: none;
+}
+
+.image-container__overlay-icon {
+    position: absolute;
+    width: 50px;
+    display: none;
+}
+
+.card__image-container:hover .overlay {
+    display: block;
+}
+
+.card__title {
+    color: var(--cl-neutral-400);
+    display: block;
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+    margin: 20px 0;
+}
+
+.card__title:hover {
+    color: var(--cl-primary-500);
+}
+
+.card__text {
+    color: var(--cl-primary-400);
+    margin-bottom: 20px;
+}
+
+.card__meta {
+    --gap-icon: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card__meta-value {
+    display: flex;
+    gap: var(--gap-icon);
+}
+
+.card__meta-value img {
+    object-fit: contain;
+    width: 12px;
+}
+
+.card__meta-value p {
+    color: var(--cl-primary-500);
+    font-weight: var(--fw-500);
+}
+
+.card__meta-time-left {
+    display: flex;
+    gap: var(--gap-icon);
+}
+
+.card__meta-time-left img {
+    object-fit: contain;
+    width: 18px;
+}
+
+.card__meta-time-left p {
+    color: var(--cl-primary-400);
+    font-weight: var(--fw-500);
+}
+
+.card__line {
+    color: var(--cl-neutral-500);
+    margin-bottom: 18px;
+}
+
+.card__author {
+    display: flex;
+    align-items: center;
+}
+
+.card__author img{
+    width: 40px;
+    border: 1px solid var(--cl-neutral-400);
+    border-radius: 50%;
+}
+
+.card__author p {
+    color: var(--cl-primary-400);
+    margin-left: 20px;
+}
+
+.card__author a {
+    color: var(--cl-neutral-400);
+    font-size: var(--fs-400);
+    margin-left: 4px;
+    text-decoration: none;
+}
+
+.card__author a:hover {
+    color: var(--cl-primary-500);
+}
