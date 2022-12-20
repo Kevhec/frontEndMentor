@@ -68,11 +68,11 @@ a {
 .background {
     position: absolute;
     z-index: 0;
-    height: 200px;
+    min-height: 30vh;
 }
 
 .background > * {
-    height: 200px;
+    min-height: 30vh;
 }
 
 .main-container {
@@ -165,9 +165,6 @@ a {
     box-shadow: 0px 10px 10px 2px var(--cl-primary-paleB);
     cursor: pointer;
     transition: background-color 200ms ease-in;
-}
-
-.proceed-btn p {
     color: var(--cl-neutral-white);
     font-weight: var(--fw-700);
 }
