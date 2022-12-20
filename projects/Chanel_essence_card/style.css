@@ -82,8 +82,7 @@ p {
 .card-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2.8rem;
+    justify-content: space-between;
     padding: 2.5rem 3.5rem;
 }
 
