@@ -83,8 +83,8 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
-    padding: 3.5rem;
+    gap: 2.8rem;
+    padding: 2.5rem 3.5rem;
 }
 
 .card-info__before-title {
