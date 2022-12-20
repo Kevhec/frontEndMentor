@@ -133,6 +133,7 @@ p {
 .button__text {
     color: var(--cl-neutral-white);
     font-weight: var(--fw-bold);
+    text-decoration: none;
 }
 
 .card-info__button:hover,
