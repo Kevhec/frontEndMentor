@@ -1,26 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-  }
-
 /* Custom properties */
 
 :root{
@@ -31,8 +8,8 @@ svg {
     --cl-neutral-white: hsl(0, 0%, 100%);
     --cl-btn-active: hsl(156, 41%, 18%);
 
-    --fs-normal: 1.4rem;
-    --fs-big: 3.2rem;
+    --fs-normal: 0.875rem;
+    --fs-big: 2rem;
 
     --fw-normal: 500;
     --fw-bold: 700;
@@ -44,8 +21,6 @@ svg {
 body {
     background-color: var(--cl-primary-cream);
     font-family: var(--ff-normal);
-    line-height: 1.5;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +44,7 @@ p {
     min-width: 350px;
     max-width: 600px;
     border-radius: 10px;
-    margin: 1rem;
+    margin: 0.625rem;
     overflow: hidden;
     background-color: var(--cl-neutral-white);
 }
@@ -83,11 +58,11 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 1.875rem;
 }
 
 .card-info__before-title {
-    letter-spacing: .5rem;
+    letter-spacing: 0.313rem;
 }
 
 .card-info__main-title {
@@ -101,7 +76,7 @@ p {
 .card-info__prices {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.625rem;
 }
 
 .prices__new {
@@ -114,10 +89,10 @@ p {
 
 .card-info__button {
     display: flex;
-    height: 4rem;
+    height: 2.5rem;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.625rem;
     border: none;
     background-color: var(--cl-primary-cyan);
     border-radius: 10px;

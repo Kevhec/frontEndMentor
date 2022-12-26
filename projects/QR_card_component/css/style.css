@@ -1,21 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-img {
-    display: block;
-    width: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 62.5%;
-}
-
 /* custom properties */
 :root {
     --cl-white: hsl(0, 0%, 100%);
@@ -24,8 +6,8 @@ html {
     --cl-dark-blue: hsl(218, 44%, 22%);
     
     --ff-400: 'Outfit', sans-serif;
-    --fs-400: 1.5rem;
-    --fs-700: 2rem;
+    --fs-400: 0.938rem;
+    --fs-700: 1.25rem;
 }
 
 /* General styles */
@@ -33,7 +15,6 @@ body {
     font-family: var(--ff-400);
     font-size: var(--fs-400);
     background-color: var(--cl-light-gray);
-    height: 100vh;
     color: var(--cl-grayish-blue);
 }
 
@@ -51,11 +32,11 @@ h1 {
 }
 
 .card {
-    --mrgn: 2rem;
+    --mrgn: 1.25rem;
     
     width: 300px;
     background-color: var(--cl-white);
-    padding: 1.5rem;
+    padding: 0.938rem;
     border-radius: 20px;
 }
 
@@ -65,7 +46,7 @@ h1 {
 }
 
 .card-text {
-    padding: 0 .5rem;
+    padding: 0 0.313rem;
 }
 
 .card-text > * {

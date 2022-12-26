@@ -34,7 +34,7 @@ function ratingSubmit (evt) {
   const ratingDisplayText = document.createElement('p');
   ratingDisplayContainer.classList.add('card__rating-display','round-container','center-element');
   ratingDisplayText.classList.add('orange-text')
-  ratingDisplayText.textContent = `You selected ${ratingValue} out of 5`
+  ratingDisplayText.textContent = `You selected ${ratingValue} out of 5`;
   
   ratingDisplayContainer.appendChild(ratingDisplayText);
   card.insertBefore(ratingDisplayContainer, card.children[1]);

@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Rating Component</title>
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <main class="card-container">
@@ -21,31 +22,33 @@
         <h1>How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       </div>
-      <form class="card__form">
-        <div class="form__label-container">
-          <input type="radio" name="score" id="score-1" value="1">
-          <label class="radio-button round-container" for="score-1">
-            <span>1</span>
-          </label>
-          <input type="radio" name="score" id="score-2" value="2">
-          <label class="radio-button round-container" for="score-2">
-            <span>2</span>
-          </label>
-          <input type="radio" name="score" id="score-3" value="3">
-          <label class="radio-button round-container" for="score-3">
-            <span>3</span>
-          </label>
-          <input type="radio" name="score" id="score-4" value="4">
-          <label class="radio-button round-container" for="score-4">
-            <span>4</span>
-          </label>
-          <input type="radio" name="score" id="score-5" value="5">
-          <label class="radio-button round-container" for="score-5">
-            <span>5</span>
-          </label>
-        </div>                                
-        <input class="card__submit-button" type="submit" value="SUBMIT">
-      </form>
+      <fieldset>
+        <form class="card__form">
+          <div class="form__label-container">
+            <input type="radio" name="score" id="score-1" value="1">
+            <label class="radio-button round-container" for="score-1">
+              <span>1</span>
+            </label>
+            <input type="radio" name="score" id="score-2" value="2">
+            <label class="radio-button round-container" for="score-2">
+              <span>2</span>
+            </label>
+            <input type="radio" name="score" id="score-3" value="3">
+            <label class="radio-button round-container" for="score-3">
+              <span>3</span>
+            </label>
+            <input type="radio" name="score" id="score-4" value="4">
+            <label class="radio-button round-container" for="score-4">
+              <span>4</span>
+            </label>
+            <input type="radio" name="score" id="score-5" value="5">
+            <label class="radio-button round-container" for="score-5">
+              <span>5</span>
+            </label>
+          </div>                                
+          <input class="card__submit-button" type="submit" value="SUBMIT">
+        </form>
+      </fieldset>
     </div>
   </main>
   <script src="./main.js"></script>

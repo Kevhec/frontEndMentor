@@ -1,27 +1,3 @@
-/* Basic reset */
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
 /* Custom properties */
 :root {
     --cl-primary-400: hsl(25, 97%, 53%);
@@ -35,9 +11,9 @@ svg {
     --cl-neutral-900: hsl(216, 12%, 8%);
 
     --ff-400: 'Overpass', sans-serif;
-    --fs-400: 1.4rem;
-    --fs-500: 2rem;
-    --fs-700: 2.5rem;
+    --fs-400: 0.875rem;
+    --fs-500: 1.25rem;
+    --fs-700: 1.563rem;
     --fw-400: 400;
     --fw-700: 700;
 
@@ -49,7 +25,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     font-family: var(--ff-400);
     background-color: var(--cl-neutral-900);
 }
@@ -66,6 +41,10 @@ p {
     color: var(--cl-neutral-500);
 }
 
+fieldset {
+    border: none;
+}
+
 /* Specific styles */
 .card-container {
     max-width: 400px;
@@ -75,14 +54,14 @@ p {
 
 .card {
     background: linear-gradient(to bottom, var(--cl-neutral-700), var(--cl-neutral-700-gradient));
-    padding: 2.5rem;
+    padding: 1.563rem;
     position: relative;
     border-radius: 25px;
     min-height: 350px;
 }
 
 .card >*:not(.card__form) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 
@@ -92,11 +71,7 @@ p {
 }
 
 .card__text h1 {
-    margin-bottom: 1.5rem;
-}
-
-.card__text p {
-    line-height: 2.4rem;
+    margin-bottom: 0.938rem;
 }
 
 .card__form {
@@ -108,7 +83,7 @@ p {
 .form__label-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 .radio-button {
@@ -148,16 +123,16 @@ input[type="radio"]:checked + .radio-button span {
 .card__submit-button {
     display: block;
     width: 100%;
-    height: 4rem;
+    height: 2.5rem;
     border-radius: 50px;
     outline: none;
     border: none;
     background-color: var(--cl-primary-400);
     box-shadow: 0px 2px 5px var(--cl-neutral-900);
-    padding-top: .3rem;
+    padding-top: 0.188rem;
     color: var(--cl-neutral-400);
     font-weight: var(--fw-700);
-    letter-spacing: .2rem;
+    letter-spacing: 0.125rem;
 }
 
 .card__submit-button:active {
