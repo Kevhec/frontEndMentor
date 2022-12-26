@@ -116,7 +116,7 @@ p {
     width: var(--circle-size);
 }
 
-.radio-button p {
+.radio-button span {
     position: absolute;
     bottom: 10px;
     font-size: var(--fs-400);
