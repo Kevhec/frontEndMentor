@@ -1,0 +1,110 @@
+/* Custom properties */
+:root {
+    --cl-primary-400: hsl(31, 77%, 52%);
+    --cl-primary-500: hsl(184, 100%, 22%);
+    --cl-primary-600: hsl(179, 100%, 13%);
+
+    --cl-neutral-400: hsla(0, 0%, 100%, 0.75);
+    --cl-neutral-700: hsl(0, 0%, 95%);
+
+    --ff-400: 'Lexend Deca', sans-serif;
+    --ff-700: 'Big Shoulders Display', cursive;
+
+    --fs-400: 0.938rem;
+    --fs-700: 2.5rem;
+
+    --sz-300: 0.625rem;
+    --sz-400: 1.25rem;
+    --sz-500: 1.563rem;
+    --sz-600: 2.188rem;
+    --sz-700: 3.125rem;
+    --sz-900: 6.25rem;
+}
+
+/* General Styles */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cl-neutral-700);
+}
+
+h2 {
+    font-family: var(--ff-700);
+    font-size: var(--fs-700);
+    color: var(--cl-neutral-700);
+}
+
+p {
+    font-family: var(--ff-400);
+    font-size: var(--fs-400);
+    color: var(--cl-neutral-400);
+    line-height: 1.7;
+}
+
+.component {
+    display: flex;
+    flex-direction: column;
+    margin: var(--sz-500);
+    max-width: 375px;
+    border-radius: var(--sz-300);
+    overflow: hidden;
+}
+
+.card {
+    padding: var(--sz-700);
+}
+
+.card>*:not(:last-child) {
+    margin-bottom: var(--sz-500);
+}
+
+.card__text h2 {
+    margin-bottom: var(--sz-500);
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    padding: var(--sz-300) var(--sz-500);
+    background-color: var(--cl-neutral-700);
+    border-radius: 50px;
+    font-family: var(--ff-400);
+    text-decoration: none;
+    color: black;
+    mix-blend-mode: screen;
+    transition: all ease-out 100ms;
+}
+
+.button:hover {
+    color: var(--cl-neutral-700);
+    outline: 2px solid var(--cl-neutral-700);
+    background-color: black;
+    mix-blend-mode: screen;
+}
+
+/* Specific styles */
+
+
+.sedan {
+    background-color: var(--cl-primary-400);
+}
+
+.suv {
+    background-color: var(--cl-primary-500);
+}
+
+.luxury {
+    background-color: var(--cl-primary-600);
+}
+
+@media (min-width: 64em) {
+    .component {
+        flex-direction: row;
+        max-width: 950px;
+    }
+
+    .card .card__text {
+        margin-bottom: var(--sz-900);
+    }
+}
