@@ -37,7 +37,8 @@ p {
 }
 
 h1 {
-    font-family: var(--ff-700);
+    font-family: var(--ff-400);
+    font-weight: var(--fw-700);
     font-size: var(--fs-700);
     color: var(--cl-neutral-300);
 }
