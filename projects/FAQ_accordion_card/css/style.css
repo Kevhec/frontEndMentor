@@ -71,6 +71,10 @@ main {
     background-color: white;
 }
 
+.box-container {
+    display: none;
+}
+
 .faq__main-illustration {
     background-image: url(../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
@@ -138,6 +142,7 @@ main {
     }
     
     .box-container {
+        display: unset;
         position: absolute;
         z-index: 1;
         padding-top: 100px;
