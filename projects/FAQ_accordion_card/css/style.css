@@ -1,0 +1,216 @@
+:root {
+    --cl-primary-400: hsl(238 29% 16%); /* text */
+    --cl-primary-500: hsl(14 88% 65%);
+
+    --cl-bg-400: hsl(273 75% 66%);      /* gradient */
+    --cl-bg-500: hsl(240 73% 65%);
+
+    --cl-neutral-400: hsl(240 5% 91%);  /* dividers */
+    --cl-neutral-500: hsl(240 6% 50%);  /* text */
+    --cl-neutral-600: hsl(237 12% 33%);
+
+    --ff-400: 'Kumbh Sans', sans-serif;
+    --fs-400: 0.75rem;  /* 12px */
+    --fs-700: 0.875rem; /* 14px */
+    --fs-900: 1.563rem; /* 25px */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --sz-300: 0.625rem; /* 10px */
+    --sz-400: 0.938rem; /* 15px */
+    --sz-500: 1.25rem;  /* 20px */
+    --sz-600: 1.875rem; /* 30px */
+    --sz-700: 2.5rem;   /* 40px */
+    --sz-800: 3.125rem; /* 50px */
+    --sz-900: 3.75rem;  /* 60px */
+    --sz-1000: 6.25rem; /* 100px */
+}
+
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, var(--cl-bg-400), var(--cl-bg-500));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-400);
+}
+
+h1 {
+    font-size: var(--fs-900);
+    color: var(--cl-primary-400);
+    text-align: center;
+    margin-bottom: var(--sz-600);
+}
+
+h2 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-400);
+    color: var(--cl-neutral-600);
+}
+
+p {
+    font-size: var(--fs-400);
+    color: var(--cl-neutral-500);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+}
+
+/* Specific styles */
+.component {
+    position: relative;
+    width: 20.938rem;
+    padding: 0 var(--sz-500) var(--sz-800);
+    border-radius: var(--sz-500);
+    background-color: white;
+}
+
+.faq__main-illustration {
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.main__illustration-woman {
+    position: relative;
+    margin-inline: auto;
+    top: -112px;
+    width: 250px;
+    height: 250px;
+}
+
+.main-illustration__desktop-box {
+    visibility: hidden;
+}
+
+.faq-content{
+    margin-top: -125px;
+}
+
+.faq__question {
+    padding: var(--sz-400) 0;
+    border-bottom: 1px solid var(--cl-neutral-400);
+}
+
+.question-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.arrow {
+    pointer-events: none;
+}
+
+.faq__question p {
+    margin-top: var(--sz-300);
+    padding-right: var(--sz-700);
+    pointer-events: none;
+    transition: margin-top 50ms ease-in;
+    max-height: unset;
+}
+
+@media (min-width: 64em) {
+    .component {
+        width: auto;
+        margin: 0 var(--sz-1000);
+        padding: var(--sz-800) var(--sz-900) 0 0;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--sz-1000);
+    }
+    
+    .faq__main-illustration {
+        display: flex;
+        align-items: center;
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-position: left -650px top -390px;
+        padding-bottom: auto;
+    }
+
+    .main-illustration__desktop-box {
+        visibility: unset;
+        position: absolute;
+        z-index: 1;
+        left: 7px;
+        align-self: center;
+        bottom: 275px;
+        transition: transform 200ms ease-in;
+    }
+
+    .main__illustration-woman {
+        top: unset;
+        bottom: 35px;
+        margin: 15px 0 0;
+        width: 450px;
+        height: 350px;
+        left: -75px;
+    }
+
+    .faq-main_title {
+        text-align: left;
+        margin-bottom: var(--sz-400);
+    }
+
+    .faq-content {
+        margin-top: unset;
+        margin-left: -110px;
+        margin-bottom: 80px;
+    }
+
+    .faq__question:hover{
+        cursor: pointer;
+    }
+    
+    .faq__question:hover h2 {
+        color: var(--cl-primary-500);
+    }
+
+    .faq__question p {
+        padding-right: var(--sz-300);
+    }
+}
+
+/* Utility classes */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+p.hidden {
+    visibility: hidden;
+    max-height: 0;
+    margin: 0;
+}
+
+.bold-text {
+    font-weight: var(--fw-700);
+}
+
+/* for rotation anim */
+.arrow {
+    transition: transform 200ms ease-in;
+    transform: rotate(0);
+}
+
+.arrow.active {
+    transform: rotate(-180deg);
+}
+
+.translateX {
+    transform: translateX(-50px);
+}
