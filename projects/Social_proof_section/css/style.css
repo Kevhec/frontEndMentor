@@ -1,0 +1,200 @@
+:root {
+    --cl-primary-400: hsl(333 80% 67%);
+    --cl-primary-600: hsl(300 43% 22%);
+
+    --cl-neutral-400: hsl(0 0% 100%);
+    --cl-neutral-500: hsl(300, 24%, 96%);
+    --cl-neutral-600: hsl(303 10% 53%);
+
+    --ff-400: 'League Spartan', sans-serif;
+    --fs-400: 0.938rem; /* 15px */
+    --fs-700: 2.188rem; /* 35px */
+    --fs-900: 2.813rem; /* 45px */
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --sz-300: 0.625rem; /* 10px */
+    --sz-400: 0.938rem; /* 15px */
+    --sz-500: 1.25rem;  /* 20px */
+    --sz-600: 1.563rem; /* 25px */
+    --sz-700: 1.875rem; /* 30px */
+    --sz-800: 2.5rem;   /* 40px */
+    --sz-900: 3.75rem; /* 50px */
+}
+
+/* General styles */
+
+body {
+    font-family: var(--ff-400);
+    background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top, bottom;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    line-height: .8;
+    color: var(--cl-primary-600);
+}
+
+p {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-500);
+    color: var(--cl-neutral-600);
+}
+
+.social-proof-container {
+    margin-inline: auto;
+    padding: var(--sz-900) 2.875rem;
+    max-width: 25rem;
+}
+
+/* Specific styles */
+.info__context {
+    margin-bottom: var(--sz-800);
+    text-align: center;
+}
+
+.info__context h1 {
+    margin-bottom: var(--sz-600);
+}
+
+.info__rating {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sz-400);
+    margin-bottom: var(--sz-800);
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sz-300);
+    background-color: var(--cl-neutral-500);
+    padding: var(--sz-300);
+    border-radius: var(--sz-300);
+}
+
+.rating-stars {
+    background-image: url(../images/icon-star.svg);
+    background-repeat: space repeat;
+    width: 100px;
+    height: 16px;
+}
+
+.rating p {
+    font-weight: var(--fw-700);
+    color: var(--cl-primary-600);
+}
+
+.socials__testimony {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sz-500);
+}
+
+.testimony {
+    background-color: var(--cl-primary-600);
+    padding: var(--sz-600);
+    border-radius: var(--sz-300);
+}
+
+.testimony__profile {
+    display: flex;
+    align-items: center;
+    gap: var(--sz-500);
+    margin-bottom: var(--sz-500);
+}
+
+.testimony__profile img {
+    width: var(--sz-800);
+    height: var(--sz-800);
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.personals__name {
+    color: var(--cl-neutral-400);
+}
+
+.personals__verified {
+    font-weight: var(--fw-400);
+    color: var(--cl-primary-400);
+}
+
+.testimony-text {
+    font-weight: var(--fw-400);
+    color: var(--cl-neutral-400);
+}
+
+@media (min-width: 64em) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+        background-size: 50%, 80%;
+        background-position: top left, bottom right;
+    }
+    
+    h1 {
+        font-size: var(--fs-900);
+    }
+
+    .social-proof-container {
+        max-width: 1055px;
+    }
+
+    .socials__info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: var(--sz-700);
+    }
+
+    .info__context {
+        text-align: left;
+        padding-right: 100px;
+    }
+
+    .info__rating {
+        justify-content: flex-end;
+    }
+
+    .rating {
+        flex-direction: row;
+        width: calc(100% - var(--sz-900));
+    }
+
+    .rating p {
+        margin-left: var(--sz-500);
+    }
+
+    .rating:nth-of-type(2) {
+        align-self: center;
+    }
+
+    .rating:nth-of-type(3) {
+        align-self: flex-end;
+    }
+
+    .socials__testimony {
+        flex-direction: row;
+        height: 260px;
+    }
+
+    .testimony {
+        height: 230px;
+    }
+
+    .testimony:nth-of-type(2) {
+        align-self: center;
+    }
+
+    .testimony:nth-of-type(3) {
+        align-self: flex-end;
+    }
+}
