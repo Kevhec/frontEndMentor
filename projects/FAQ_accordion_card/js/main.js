@@ -3,6 +3,7 @@ const womanIllustration = document.querySelector('.main__illustration-woman')
 const box = document.querySelector('.main-illustration__desktop-box')
 
 faqQuestions.addEventListener('click', openQuestion);
+
 womanIllustration.addEventListener('mouseenter', () => {
   box.classList.add('translateX')
 })

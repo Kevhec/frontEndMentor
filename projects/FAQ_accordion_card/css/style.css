@@ -66,7 +66,7 @@ main {
 /* Specific styles */
 .component {
     position: relative;
-    width: 20.938rem;
+    width: 335px;
     border-radius: var(--sz-500);
     background-color: white;
 }
@@ -86,7 +86,6 @@ main {
     margin-inline: auto;
     top: -112px;
     width: 250px;
-    height: 250px;
 }
 
 .main-illustration__desktop-box {
@@ -94,7 +93,7 @@ main {
 }
 
 .faq-content{
-    margin-top: -125px;
+    margin-top: -3.75rem;
     padding: 0 var(--sz-600) var(--sz-800);
 }
 
@@ -117,14 +116,13 @@ main {
 .faq__question p {
     margin-top: var(--sz-300);
     padding-right: var(--sz-700);
-    pointer-events: none;
     transition: margin-top 50ms ease-in;
-    max-height: unset;
+    pointer-events: none;
 }
 
 @media (min-width: 64em) {
     .component {
-        width: auto;
+        width: unset;
         max-width: 900px;
         margin: 0 var(--sz-1000);
         overflow: hidden;
@@ -145,18 +143,18 @@ main {
         display: unset;
         position: absolute;
         z-index: 1;
-        padding-top: 100px;
-        padding-left: 6px;
+        padding-top: 6.25rem;
+        padding-left: 0.438rem;
     }
 
     .main-illustration__desktop-box {
         visibility: unset;
-        transition: transform 200ms ease-in;
+        transition: transform 250ms ease-in-out;
     }
 
     .main__illustration-woman {
         top: unset;
-        margin: 15px 0 0;
+        margin: 0.938rem 0 0;
         width: 450px;
         height: 350px;
         left: -75px;
@@ -169,7 +167,7 @@ main {
 
     .faq-content {
         margin-top: unset;
-        margin-left: -120px;
+        margin-left: -7.5rem;
         padding: var(--sz-900);
     }
 
@@ -187,18 +185,10 @@ main {
 }
 
 /* Utility classes */
-.visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
 
 p.hidden {
     visibility: hidden;
+    opacity: 0;
     max-height: 0;
     margin: 0;
 }
