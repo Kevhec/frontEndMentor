@@ -39,7 +39,7 @@ h1 {
     font-size: var(--fs-900);
     color: var(--cl-primary-400);
     text-align: center;
-    margin-bottom: var(--sz-600);
+    margin-bottom: var(--sz-500);
 }
 
 h2 {
@@ -67,7 +67,6 @@ main {
 .component {
     position: relative;
     width: 20.938rem;
-    padding: 0 var(--sz-500) var(--sz-800);
     border-radius: var(--sz-500);
     background-color: white;
 }
@@ -92,6 +91,7 @@ main {
 
 .faq-content{
     margin-top: -125px;
+    padding: 0 var(--sz-600) var(--sz-800);
 }
 
 .faq__question {
@@ -121,8 +121,8 @@ main {
 @media (min-width: 64em) {
     .component {
         width: auto;
+        max-width: 900px;
         margin: 0 var(--sz-1000);
-        padding: var(--sz-800) var(--sz-900) 0 0;
         overflow: hidden;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -133,23 +133,24 @@ main {
         display: flex;
         align-items: center;
         background-image: url(../images/bg-pattern-desktop.svg);
-        background-position: left -650px top -390px;
+        background-position: bottom 35% right -15%;
         padding-bottom: auto;
+    }
+    
+    .box-container {
+        position: absolute;
+        z-index: 1;
+        padding-top: 100px;
+        padding-left: 6px;
     }
 
     .main-illustration__desktop-box {
         visibility: unset;
-        position: absolute;
-        z-index: 1;
-        left: 7px;
-        align-self: center;
-        bottom: 275px;
         transition: transform 200ms ease-in;
     }
 
     .main__illustration-woman {
         top: unset;
-        bottom: 35px;
         margin: 15px 0 0;
         width: 450px;
         height: 350px;
@@ -163,8 +164,8 @@ main {
 
     .faq-content {
         margin-top: unset;
-        margin-left: -110px;
-        margin-bottom: 80px;
+        margin-left: -120px;
+        padding: var(--sz-900);
     }
 
     .faq__question:hover{
