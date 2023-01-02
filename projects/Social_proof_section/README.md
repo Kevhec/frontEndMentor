@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Social proof section](https://github.com/Kevhec/frontEndMentor/tree/master/projects/Social_proof_section)
+- Live Site URL: [KevHec - Social proof section](https://kevhec.github.io/frontEndMentor/projects/Social_proof_section/)
 
 ## My process
 
@@ -42,33 +42,27 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+From this project I liked the way I used the *backgound-repeat* in order to avoid cloning the star icon in the score section of my html.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.rating-stars {
+    background-image: url(../images/icon-star.svg);
+    background-repeat: space;
+    width: 100px;
+    height: 16px;
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Positioning is one of my main focuses with CSS in this moment of my learning process, but I'm also interested on knowing other ways to use properties that were not made for that specific purpose.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [MDN - background-repeat](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat) - This is the documentation I used for the *background-repeat* property.
 
 ## Author
 
