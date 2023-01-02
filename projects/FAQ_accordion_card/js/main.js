@@ -4,12 +4,12 @@ const box = document.querySelector('.main-illustration__desktop-box')
 
 faqQuestions.addEventListener('click', openQuestion);
 
-womanIllustration.addEventListener('mouseenter', () => {
+/* womanIllustration.addEventListener('mouseenter', () => {
   box.classList.add('translateX')
 })
 womanIllustration.addEventListener('mouseleave', () => {
   box.classList.remove('translateX')
-})
+}) */
 
 
 function openQuestion(evt) {

@@ -149,7 +149,8 @@ main {
 
     .main-illustration__desktop-box {
         visibility: unset;
-        transition: transform 250ms ease-in-out;
+/*         transition: transform 250ms ease-in-out; */
+        animation: translation 3s ease-in-out 0s infinite;
     }
 
     .main__illustration-woman {
@@ -207,6 +208,20 @@ p.hidden {
     transform: rotate(-180deg);
 }
 
+/* For box animation */
+
 .translateX {
     transform: translateX(-50px);
+}
+
+@keyframes translation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-25px)
+    }
+    100% {
+        transform: translateX(0)
+    }
 }
