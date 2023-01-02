@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img href="./images/Screenshot-desktop.png" width="500px">
-<img href="./images/Screenshot-desktop.png" height="500px">
+<img src="./images/Screenshot-desktop.png" width="500px">
+<img src="./images/Screenshot-mobile.png" height="500px">
 
 ### Links
 
