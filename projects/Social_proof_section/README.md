@@ -1,6 +1,6 @@
-# Frontend Mentor - Challenge name solution
+# Frontend Mentor - Social proof section solution
 
-This is a solution to the [challenge name challenge on Frontend Mentor]( challenge-link ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [challenge Social proof section on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -14,7 +14,6 @@ This is a solution to the [challenge name challenge on Frontend Mentor]( challen
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -23,11 +22,11 @@ This is a solution to the [challenge name challenge on Frontend Mentor]( challen
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img href="./images/Screenshot-desktop.png" width="500px">
+<img href="./images/Screenshot-desktop.png" height="500px">
 
 ### Links
 
@@ -75,7 +74,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - Frontend Mentor - [@Kevhec](https://www.frontendmentor.io/profile/Kevhec)
 - Twitter - [@Kev_Hec](https://twitter.com/Kev_Hec)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
