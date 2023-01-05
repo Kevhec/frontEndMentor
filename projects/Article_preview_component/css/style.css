@@ -1,0 +1,241 @@
+:root {
+    --cl-300: hsl(0 100% 100%);
+    --cl-400: hsl(120 46% 95%);
+    --cl-500: hsl(212 23% 69%);
+    --cl-500-a: hsla(212 23% 69% / .4);
+    --cl-600: hsl(214 17% 51%);
+    --cl-700: hsl(217 19% 35%);
+
+    --ff-400: 'Manrope', sans-serif;
+    --fs-400: 0.813rem; /* 13px */
+    --fs-700: 1rem;  /* 16px */
+    --fw-400: 500;
+    --fw-700: 700;
+
+    --sz-400: 0.625rem; /* 10px */
+    --sz-500: 0.938rem; /* 15px */
+    --sz-600: 1.25rem;  /* 20px */
+    --sz-700: 1.875rem; /* 30px */
+    --sz-800: 2.5rem;   /* 40px */
+}
+
+/* General Styles */
+
+body {
+    font-family: var(--ff-400);
+    background-color: var(--cl-400);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-700);
+    color: var(--cl-600);
+}
+
+p {
+    font-size: var(--fs-400);
+    color: var(--cl-500);
+}
+
+.share__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: var(--sz-700);
+    height: var(--sz-700);
+    border: unset;
+    border-radius: 50%;
+    background-color: var(--cl-400);
+    cursor: pointer;
+    justify-self: right;
+    position: relative;
+    transition: background-color 200ms ease-in;
+    z-index: 20;
+}
+
+.share__button.active {
+    background-color: var(--cl-600);
+}
+
+.share__button svg{
+     pointer-events: none;
+}
+
+/* Specific styles */
+
+.card {
+    margin: 0 var(--sz-700);
+    max-width: 21.25rem;
+    max-height: 600px;
+    background-color: var(--cl-300);
+    border-radius: var(--sz-400);
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card__text {
+    margin-bottom: var(--sz-700);
+    padding: var(--sz-700) var(--sz-700) 0;
+}
+
+.text__title {
+    margin-bottom: var(--sz-500);
+}
+
+.card__meta {
+    display: grid;
+    grid-template-columns: 40px 1fr 30px;
+    align-items: center;
+    height: 60px;
+    padding: 0 var(--sz-700);
+}
+
+.meta__profile-pic {
+    width: var(--sz-800);
+    height: var(--sz-800);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.meta__author-info {
+    padding-left: 0.5rem;
+}
+
+.author__name {
+    font-weight: var(--fw-700);
+    color: var(--cl-600);
+}
+
+.share__container {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto 1fr 30px;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 0 var(--sz-700);
+    background-color: var(--cl-700);
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 200ms ease-in;
+}
+
+.share__container p {
+    letter-spacing: 4px;
+    color: var(--cl-500);
+}
+
+.share__container.active {
+    opacity: 1;
+    z-index: auto;
+}
+
+.card__socials {
+    display: flex;
+}
+
+.card__socials img {
+    width: var(--sz-600);
+    height: var(--sz-600);
+    margin: 0 var(--sz-400);
+}
+
+.card__socials img:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 64em) {
+    h1 {
+        font-size: 1.325rem;
+        color: var(--cl-700);
+    }
+
+    p {
+        color: var(--cl-600);
+    }
+
+    .card {
+        display: flex;
+        max-width: 780px;
+        overflow: unset;
+    }
+
+    .card__image {
+        height: auto;
+        overflow: hidden;
+        border-top-left-radius: var(--sz-400);
+        border-bottom-left-radius: var(--sz-400);
+        flex: 1.5;
+    }
+
+    .card__image img {
+        object-fit: cover;
+        object-position: left;
+        height: 100%;
+    }
+
+    .card__content {
+        padding: var(--sz-800);
+        flex: 2;
+    }
+
+    .card__meta {
+        padding: 0;
+        height: auto;
+    }
+
+    .author__name {
+        color: var(--cl-700);
+    }
+
+    .publishing-date {
+        color: var(--cl-500);
+    }
+
+    .share__container {
+        right: -55px;
+        bottom: 100px;
+        grid-template-columns: .8fr 1fr;
+        padding: 0 var(--sz-600);
+        width: 220px;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 0 12px 5px -2px var(--cl-500-a);
+    }
+
+    .share__container::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: var(--cl-700);
+        justify-self: center;
+        bottom: -8px;
+        box-shadow: 5px 5px 5px var(--cl-500-a);
+        transform: rotate(45deg) skew(0deg, 180deg);
+    }
+
+    .card__socials {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .card__socials img {
+        margin: unset;
+    }
+
+    .card__text {
+        padding: 0;
+    }
+}
