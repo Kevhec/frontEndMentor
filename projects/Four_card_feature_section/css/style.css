@@ -134,6 +134,7 @@ p {
     .section__resume {
         max-width: 500px;
         margin-inline: auto;
+        margin-bottom: var(--sz-700);
     }
 
     .resume__main-title {
