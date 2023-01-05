@@ -54,6 +54,7 @@ p {
 .landing-section {
     max-width: 375px;
     padding: var(--sz-900) var(--sz-700);
+    margin-inline: auto;
 }
 
 .section__cards {
