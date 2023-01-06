@@ -1,0 +1,245 @@
+:root {
+    --cl-primary-400: hsl(0 36% 70%);
+    --cl-primary-400-a: hsla(0 36% 70% / .5);
+    --cl-primary-500: hsl(0 93% 68%);
+    --cl-neutral-400: hsl(0 6% 24%);
+
+    --ff-400: 'Josefin Sans', sans-serif;
+    --fs-300: 0.875rem; /* 14px */
+    --fs-400: 1rem;     /* 16px */
+    --fs-700: 2.5rem;   /* 40px */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+
+    --sz-300: 0.625rem; /* 10px */
+    --sz-400: 0.938rem; /* 15px */
+    --sz-500: 1.25rem;  /* 20px */
+    --sz-600: 1.563rem; /* 25px */
+    --sz-700: 1.875rem; /* 30px */
+    --sz-800: 3.125rem; /* 50px */
+    --sz-900: 3.75rem;  /* 60px */
+}
+
+/* General styles */
+body {
+    font-family: var(--ff-400);
+    background-image: linear-gradient(135deg, hsl(0 0% 100%) 10%, hsl(0 0% 100%) 10%, hsl(0 100% 98%));
+}
+
+.container {
+    max-width: 375px;
+    margin-inline: auto;
+    padding: 0 2.375rem;
+}
+
+.apparel-logo {
+    padding: var(--sz-700) 0;
+}
+
+.apparel-logo img {
+    width: 100px;
+}
+
+.hero {
+    margin-bottom: var(--sz-900);
+}
+
+.hero img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.error-svg {
+    position: absolute;
+    right: 70px;
+    align-self: center;
+}
+
+/* Specific styles*/
+
+.coming-soon__main-title {
+    font-size: var(--fs-700);
+    color: var(--cl-neutral-400);
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin-bottom: var(--sz-600);
+}
+
+.coming-soon__main-title span {
+    font-weight: var(--fw-300);
+    color: var(--cl-primary-400);
+}
+
+.coming-soon__text {
+    font-size: var(--fs-300);
+    text-align: center;
+    color: var(--cl-primary-400);
+    margin-bottom: var(--sz-700);
+}
+
+.email-fieldset {
+    padding: unset;
+    border: 1px solid var(--cl-primary-400-a);
+    border-radius: 50px;
+}
+
+.email-fieldset form {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.email-input {
+    padding: var(--sz-300) 0 var(--sz-300) var(--sz-500);
+    border: unset;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 100%;
+    color: var(--cl-neutral-400);
+}
+
+.email-input:focus {
+    outline: unset;
+}
+
+.email-input.focus {
+    outline: 1px solid var(--cl-primary-500);
+}
+
+.email-input::placeholder {
+    color: var(--cl-primary-400);
+    font-size: var(--fs-300);
+}
+
+.submit-button {
+    position: absolute;
+    right: -2px;
+    bottom: -1px;
+    width: 21%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+    border-radius: 50px;
+    background: linear-gradient(135deg, hsl(0 80% 86%), hsl(0 74% 74%));
+    box-shadow: 0 10px 20px -5px var(--cl-primary-400);
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, hsl(0 80% 90%), hsl(0 74% 77%));
+    box-shadow: 0 15px 20px -5px var(--cl-primary-400);
+}
+
+.submit-button:active {
+    background: linear-gradient(135deg, hsl(0 80% 95%), hsl(0 74% 81%));
+}
+
+.submit-button img {
+    width: 12px;
+    height: 20px;
+}
+
+/* Utility classes */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.outline-red {
+    outline: 1px solid var(--cl-primary-500);
+}
+
+.error-text {
+    color: var(--cl-primary-500);
+    font-size: 0.85rem;
+    padding-top: var(--sz-300);
+    padding-left: var(--sz-500);
+}
+
+.padding-right-25perc {
+    padding-right: 25%;
+}
+
+.padding-right-33perc {
+    padding-right: 33%;
+}
+
+.focus {
+    outline: 1px solid var(--cl-primary-500);
+}
+
+@media (min-width: 64em) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 0.88fr;
+        grid-template-rows: 200px 1fr;
+        grid-auto-flow: dense;
+    }
+
+    .container {
+        min-width: 520px;
+    }
+
+    .apparel-logo {
+        padding: unset;
+        padding-top: 60px;
+    }
+
+    .apparel-logo img {
+        width: 150px;
+    }
+
+    .hero {
+        margin-bottom: unset;
+    }
+
+    .hero img {
+        max-height: unset;
+        min-height: 100vh;
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+    }
+
+    .coming-soon__main-title {
+        margin-top: 50px;
+        text-align: left;
+        font-size: 4rem;
+        letter-spacing: 15px;
+    }
+
+    .coming-soon__text {
+        text-align: left;
+        font-size: var(--fs-400);
+        margin-bottom: 60px;
+        line-height: 1.8;
+    }
+
+    .email-input {
+        padding-top: var(--sz-400);
+        padding-bottom: var(--sz-400);
+        padding-right: 130px;
+    }
+    
+    .email-input::placeholder {
+        font-size: var(--fs-400);
+    }
+
+    .submit-button {
+        height: 56px;
+    }
+
+    .error-svg {
+        right: 100px;
+    }
+
+}
