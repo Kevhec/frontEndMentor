@@ -13,32 +13,32 @@
   <title>Base apparel coming soon page</title>
 </head>
 <body>
-  <header class="container">
-    <figure class="apparel-logo">
-      <img src="./images/logo.svg" alt="Base Apparel logo">
-    </figure>
-  </header>
-  <figure class="hero">
-    <picture>
+  <main>
+    <header class="container">
+      <figure class="apparel-logo">
+        <img src="./images/logo.svg" alt="Base Apparel logo">
+      </figure>
+    </header>
+    <picture class="hero">
       <source media="(min-width: 64em)" srcset="./images/hero-desktop.jpg">
       <img src="./images/hero-mobile.jpg" alt="hero - woman model for apparel">
     </picture>
-  </figure>
-  <main class="coming-soon container">
-    <h1 class="coming-soon__main-title">
-      <span>WE'RE</span><br>COMING<br>SOON
-    </h1>
-    <p class="coming-soon__text">
-      Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
-    </p>
-    <fieldset class="email-fieldset">
-      <form id="email-form" action="#">
-        <input class="email-input padding-right-25perc" type="text" name="email" id="email" placeholder="Email Address">
-        <img class="error-svg visually-hidden" src="./images/icon-error.svg" alt="">
-        <button class="submit-button" type="submit"><img src="./images/icon-arrow.svg" alt=""><span class="visually-hidden">Submit</span></button>
-      </form>
-    </fieldset>
-    <p class="error-text visually-hidden"></p>
+    <div class="coming-soon container">
+      <h1 class="coming-soon__main-title">
+        <span>WE'RE</span><br>COMING<br>SOON
+      </h1>
+      <p class="coming-soon__text">
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <fieldset class="email-fieldset">
+        <form id="email-form" action="#">
+          <input class="email-input padding-right-25perc" type="text" name="email" id="email" placeholder="Email Address">
+          <img class="error-svg visually-hidden" src="./images/icon-error.svg" alt="">
+          <button class="submit-button" type="submit"><img src="./images/icon-arrow.svg" alt=""><span class="visually-hidden">Submit</span></button>
+        </form>
+      </fieldset>
+      <p class="error-text visually-hidden"></p>
+    </div>
   </main>
 
   <script src="./js/main.js"></script>
