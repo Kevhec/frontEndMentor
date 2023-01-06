@@ -182,7 +182,7 @@ body {
     body {
         display: grid;
         grid-template-columns: 1fr 0.88fr;
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: .2fr 1fr;
         grid-auto-flow: dense;
     }
 
@@ -201,13 +201,13 @@ body {
 
     .hero {
         margin-bottom: unset;
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
     }
 
     .hero img {
-        max-height: unset;
-        min-height: 100vh;
-        grid-row: 1 / 3;
-        grid-column: 2 / 3;
+        max-height: 100vh;
+        height: 100%;
     }
 
     .coming-soon__main-title {
@@ -220,7 +220,7 @@ body {
     .coming-soon__text {
         text-align: left;
         font-size: var(--fs-400);
-        margin-bottom: 60px;
+        margin-bottom: 45px;
         line-height: 1.8;
     }
 
