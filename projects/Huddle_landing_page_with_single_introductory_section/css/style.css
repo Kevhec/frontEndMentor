@@ -143,6 +143,7 @@ p {
     }
 
     .about-huddle {
+        padding-top: var(--sz-900);
         text-align: left;
     }
 
