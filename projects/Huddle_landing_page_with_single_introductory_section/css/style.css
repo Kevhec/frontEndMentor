@@ -1,0 +1,156 @@
+:root {
+    --cl-primary-400: #e882e8;
+    --cl-primary-500: #ff51c4;
+    --cl-primary-600: #674baf;
+    
+    --cl-neutral-300: #ffffff;
+
+    --ff-400: 'Open Sans', sans-serif;
+    --ff-600: 'Poppins', sans-serif;
+    --fs-300: 0.875rem;
+    --fs-400: 0.875rem;
+    --fs-500: 1.063rem; /* 17px */
+    --fs-600: 1.563rem; /* 25px */
+    --fs-700: 1.875rem; /* 30px */
+    
+    --sz-400: 0.625rem; /* 10px */
+    --sz-500: 1rem;     /* 16px */
+    --sz-600: 1.25rem;  /* 20px */
+    --sz-700: 1.563rem; /* 25px */
+    --sz-800: 1.875rem; /* 30px */
+    --sz-900: 2.5rem;   /* 40px */
+}
+
+/* General Styles */
+
+body {
+    background-color: var(--cl-primary-600);
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: var(--sz-900) 0;
+    font-family: var(--ff-400);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 90%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--ff-600);
+    font-size: var(--fs-600);
+}
+
+p {
+    font-size: var(--fs-500);
+}
+
+/* Specific Styles */
+.huddle-logo {
+    width: 150px;
+}
+
+.main-illustration {
+    margin-bottom: var(--sz-900);
+}
+
+.about-huddle {
+    text-align: center;
+}
+
+.main-title {
+    margin-bottom: var(--sz-600);
+}
+
+.main-text {
+    margin-bottom: var(--sz-600);
+}
+
+.register-button {
+    width: 220px;
+    padding: var(--sz-400) 0;
+    border: unset;
+    border-radius: 50px;
+    font-size: var(--fs-300);
+    color: var(--cl-primary-600);
+    box-shadow: 0 3px 7px #453274;
+    cursor: pointer;
+    transition: background-color 100ms ease-in, color 100ms ease-in;
+}
+
+.register-button:hover {
+    background-color: var(--cl-primary-400);
+    color: var(--cl-neutral-300);
+}
+
+.register-button:active {
+    background-color: #d677d6;
+    scale: .995;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--sz-400);
+}
+
+.icon {
+    border: 1px solid var(--cl-neutral-300);
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+    transition: border-color 100ms ease-in;
+}
+
+.icon:not(:last-of-type) {
+    margin-right: 8px;
+}
+
+.icon svg {
+    width: var(--sz-500);
+    height: var(--sz-500);
+    transition: color 100ms ease-in;
+}
+
+.icon:hover svg {
+    color: var(--cl-primary-500);
+}
+
+.icon:hover {
+    border-color: var(--cl-primary-500);
+}
+
+@media (min-width: 64em) {
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr .85fr;
+        gap: var(--sz-900);
+    }
+
+    .about-huddle {
+        text-align: left;
+    }
+
+    .main-title {
+        font-size: var(--fs-700);
+        margin-bottom: var(--sz-600);
+    }
+
+    .main-text {
+        font-size: var(--fs-400);
+    }
+
+    .register-button {
+        width: 155px;
+    }
+
+    .socials {
+        justify-content: right;
+    }
+}
