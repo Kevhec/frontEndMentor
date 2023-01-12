@@ -120,6 +120,7 @@ a {
     color: var(--cl-neutral-400);
     padding: 0 var(--sz-600);
     text-align: center;
+    line-height: 2;
 }
 
 .registration-terms a {
