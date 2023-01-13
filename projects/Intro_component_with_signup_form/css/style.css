@@ -41,6 +41,10 @@ a {
     color: inherit;
 }
 
+label {
+    position: relative;
+}
+
 /* Specific styles */
 
 .description {
@@ -82,14 +86,13 @@ a {
 .registration-form input {
     display: block;
     width: 100%;
-    margin-bottom: var(--sz-500);
     padding: var(--sz-500);
     border: 1px solid #d1d1d1;
     border-radius: calc(var(--sz-300) / 2);
 }
 
 .registration-form input:focus {
-    outline: 2px solid var(--cl-primary-500);
+    outline: 2px solid var(--cl-primary-600);
     border-color: transparent;
 }
 
@@ -130,4 +133,43 @@ a {
 
 .registration-terms a:hover {
     text-decoration: underline;
+}
+
+.alert-text {
+    color: var(--cl-primary-500);
+    font-size: var(--fs-300);
+    text-align: right;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.mb-15 {
+    margin-bottom: var(--sz-500);
+}
+
+.error-icon {
+    position: relative;
+}
+
+.error-icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../images/icon-error.svg);
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+    right: calc(var(--sz-400) * 2);
+    top: var(--sz-500);
+    z-index: 100;
+}
+
+input.border-red {
+    border-width: 2px;
+    border-color: var(--cl-primary-500);
+}
+
+input.border-red:focus {
+    outline: unset;
+    border-color: var(--cl-primary-500);
 }
