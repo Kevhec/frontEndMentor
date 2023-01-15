@@ -191,7 +191,7 @@ p {
 
 /** Main **/
 .page-main {
-    margin-bottom: var(--sz-600);
+    margin-bottom: calc(var(--sz-400) * 7);
 }
 
 .main-new-image {
