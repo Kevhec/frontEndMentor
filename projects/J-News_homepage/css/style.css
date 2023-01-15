@@ -146,19 +146,23 @@ p {
 
 .main-nav {
     position: absolute;
-    right: -100%;
+    right: 0;
     top: 0;
-    width: 70%;
+    width: 0;
+    overflow: hidden;
     height: 100%;
     z-index: 2;
     background-color: var(--cl-neutral-300);
     padding-top: calc(var(--sz-700) * 3);
-    padding-left: var(--sz-600);
-    transition: right 300ms ease-in;
+    transition: width 300ms ease-in;
 }
 
 .main-nav.active {
-    right: 0;
+    width: 70%;
+}
+
+.nav-container {
+    padding-left: var(--sz-600);
 }
 
 .background-overlay {
