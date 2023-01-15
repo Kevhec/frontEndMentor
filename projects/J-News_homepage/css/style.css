@@ -187,11 +187,12 @@ p {
 
 /** Main **/
 .main-new-image {
-    margin-bottom: var(--sz-500);
+    margin-bottom: var(--sz-600);
 }
 
 .main-new-title {
-    line-height: 1;
+    line-height: 1.15;
+    font-weight: var(--fw-800);
     margin-bottom: var(--sz-500);
 }
 
