@@ -190,7 +190,7 @@ p {
     font-weight: 500;
 }
 
-.nav-link:hover {
+.nav-link:is(:hover, :active) a{
     color: var(--cl-primary-500);
 }
 
@@ -260,7 +260,7 @@ p {
     margin-bottom: var(--sz-300);
 }
 
-.other-new-title:hover {
+.other-new-title:is(:hover, :active) a {
     color: var(--cl-primary-400);
 }
 
@@ -310,7 +310,7 @@ p {
     margin-bottom: var(--sz-400);
 }
 
-.top-new-title:hover {
+.top-new-title:is(:hover, :active) a {
     color: var(--cl-primary-500);
 }
 
@@ -352,10 +352,12 @@ p {
         padding: 0;
         display: flex;
     }
+
     .nav-link {
         font-weight: var(--fw-400);
         color: var(--cl-neutral-500);
     }
+
     .nav-link:not(:last-of-type) {
         margin-right: calc(var(--sz-400) * 4);
     }
