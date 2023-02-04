@@ -3,24 +3,45 @@
 .header {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: var.$sz-20;
-    min-height: 550px;
+    background-position: bottom;
+    height: calc(100vw / (750 / 1076)); /* image px ratio */
+    max-height: 538px;
     display: grid;
     place-content: center;
+    @include var.mdq {
+        height: calc(100vw / (2880 / 1600));
+        max-height: 800px;
+        padding-top: calc(var.$sz-50 * 3.5);
+        display: block;
+        place-content: unset;
+    }
     
     &__bar {
         position: fixed;
-        top: 2%;
+        top: 0;
+        left: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 90%;
+        padding: var.$sz-15;
+        color: var.$clr-primary-600;
+
+        @include var.mdq {
+            width: 100%;
+            padding: var.$sz-15 var.$sz-40;
+        }
     }
 
     &__heading {
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 4px;
+
+        @include var.mdq {
+            font-size: 58px;
+            letter-spacing: 10px;
+        }
 
         &::after {
             --arrow-sz: 100px;
@@ -33,6 +54,19 @@
             width: calc(var(--arrow-sz)/3);
             margin-inline: auto;
             margin-top: var.$sz-40;
+
+            @include var.mdq {
+                --arrow-sz: 120px;
+                margin-top: calc(var.$sz-50 + var.$sz-25);
+            }
+        }
+    }
+
+    &__logo {
+        width: 180px;
+
+        img {
+            width: 100%;
         }
     }
 }

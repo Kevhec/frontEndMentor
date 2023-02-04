@@ -1,19 +1,29 @@
 @use '../base/variables' as var;
 
 .nav {
-    width: 0;
+    width: 100%;
     height: 0;
     overflow: hidden;
     position: absolute;
-    background-color: var.$clr-neutral-100;
-    width: 100%;
     top: 80px;
     left: 0;
     padding: 0;
+    clip-path: polygon(0% 5%, 95% 5%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: var.$clr-neutral-100;
     transition: height 200ms ease-out, padding 200ms ease-out;
 
+    @include var.mdq {
+        position: unset;
+        height: unset;
+        overflow: unset;
+        top: unset;
+        left: unset;
+        clip-path: unset;
+        background-color: unset;
+    }
+
     &.active {
-        padding: var.$sz-30;
+        padding: calc(var.$sz-40 +  var.$sz-05) var.$sz-30 var.$sz-30;
         overflow: visible;
 
         .nav__link {
@@ -22,25 +32,17 @@
         }
     }
 
-    &::before {
-        --nav-bef-height: 20px;
-        content: "";
-        display: block;
-        width: 20px;
-        height: var(--nav-bef-height);
-        position: absolute;
-        top: calc(-1 * var(--nav-bef-height));
-        right: 0;
-        background-color: var.$clr-neutral-100;
-        clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
-    }
-
     &__list {
         display: flex;
         flex-direction: column;
         gap: var.$sz-05;
         align-items: center;
         height: 100%;
+
+        @include var.mdq {
+            flex-direction: row;
+            gap: var.$sz-15;
+        }
     }
 
     &__link {
@@ -53,6 +55,13 @@
         min-height: 54px;
         transition: opacity 100ms ease-out;
 
+        @include var.mdq {
+            opacity: unset;
+            padding: var.$sz-15 var.$sz-30;
+            color: var.$clr-neutral-100;
+            font-size: var.$fs-16;
+        }
+
         &--accent {
             font-family: var.$ff-fraunces;
             font-size: var.$fs-14;
@@ -61,6 +70,10 @@
             border-radius: 50px;
             background-color: var.$clr-primary-200;
             color: var.$clr-neutral-500;
+
+            @include var.mdq {
+                background-color: var.$clr-neutral-100;
+            }
         }
     }
 }

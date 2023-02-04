@@ -1,7 +1,5 @@
-/* 
-green: #3FAF82
+@use '../base/variables' as var;
 
-*/
 .hamb-button {
     --hamb-size: 50px;
     height: var(--hamb-size);
@@ -13,6 +11,10 @@ green: #3FAF82
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
+
+    @include var.mdq {
+        display: none;
+    }
 }
 
 .hamb-button__span {
