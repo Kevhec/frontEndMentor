@@ -1,0 +1,38 @@
+@use '../base/variables' as var;
+
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: var.$sz-20;
+    min-height: 550px;
+    display: grid;
+    place-content: center;
+    
+    &__bar {
+        position: fixed;
+        top: 2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+        &::after {
+            --arrow-sz: 100px;
+            content: "";
+            background-image: url(../assets/icons/icon-arrow-down.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: block;
+            height: var(--arrow-sz);
+            width: calc(var(--arrow-sz)/3);
+            margin-inline: auto;
+            margin-top: var.$sz-40;
+        }
+    }
+}

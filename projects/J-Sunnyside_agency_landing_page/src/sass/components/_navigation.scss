@@ -1,0 +1,66 @@
+@use '../base/variables' as var;
+
+.nav {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: var.$clr-neutral-100;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    padding: 0;
+    transition: height 200ms ease-out, padding 200ms ease-out;
+
+    &.active {
+        padding: var.$sz-30;
+        overflow: visible;
+
+        .nav__link {
+            opacity: 1;
+            transition: opacity 400ms ease-out;
+        }
+    }
+
+    &::before {
+        --nav-bef-height: 20px;
+        content: "";
+        display: block;
+        width: 20px;
+        height: var(--nav-bef-height);
+        position: absolute;
+        top: calc(-1 * var(--nav-bef-height));
+        right: 0;
+        background-color: var.$clr-neutral-100;
+        clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: var.$sz-05;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__link {
+        opacity: 0;
+        padding: var.$sz-15 var.$sz-20;
+        font-family: var.$ff-barlow;
+        text-align: center;
+        color: var.$clr-neutral-300;
+        width: 50%;
+        min-height: 54px;
+        transition: opacity 100ms ease-out;
+
+        &--accent {
+            font-family: var.$ff-fraunces;
+            font-size: var.$fs-14;
+            text-transform: uppercase;
+            font-weight: var.$fw-700;
+            border-radius: 50px;
+            background-color: var.$clr-primary-200;
+            color: var.$clr-neutral-500;
+        }
+    }
+}

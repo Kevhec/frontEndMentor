@@ -1,0 +1,57 @@
+@use 'variables' as var;
+
+body {
+    background-color: var.$clr-neutral-100;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var.$ff-fraunces;
+}
+
+h1 {
+    font-size: var.$fs-40;
+    color: var.$clr-neutral-100;
+}
+
+h2 {
+    font-size: var.$fs-24;
+}
+
+h3 {
+    font-size: var.$fs-18;
+}
+
+p {
+    font-size: var.$fs-14;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: currentColor;
+}
+
+ul {
+    list-style-type: none;
+    padding: unset;
+}
+
+[class$="__container"] {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+
+    &.active {
+        pointer-events: all;
+    }
+}

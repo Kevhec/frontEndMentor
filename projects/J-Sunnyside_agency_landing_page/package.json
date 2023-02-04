@@ -1,0 +1,22 @@
+{
+  "name": "j-sunnyside_agency_landing_page",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --no-cache --open firefox",
+    "build": "parcel build --dist-dir public --public-url ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/core": ">=2.8.3 <3.0.0",
+    "@parcel/transformer-sass": "^2.8.3",
+    "parcel": "^2.8.3",
+    "path": "^0.12.7",
+    "sass": "^1.58.0",
+    "sharp": "^0.31.3"
+  }
+}
