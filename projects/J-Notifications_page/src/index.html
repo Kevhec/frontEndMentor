@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/main.scss">
+  <title>Junior : Notification - page</title>
+</head>
+<body>
+  <main class="notifications">
+    <div class="notifications__container">
+      <div class="notifications__bar">
+        <div class="notifications__header">
+          <h1 class="notifications__heading">Notifications</h1>
+          <p class="notifications__counter"></p>
+        </div>
+        <button class="notifications__markRead">Mark all as read</button>
+      </div><!-- bar -->
+      <div class="notifications__content">
+        <div class="notification">
+          <picture class="notification__image">
+            <source srcset="./assets/images/avatar-mark-webber.webp?as=avif" type="image/avif">
+            <source srcset="./assets/images/avatar-mark-webber.webp" type="image/webp">
+            <img src="./assets/images/avatar-mark-webber.webp?as=jpeg" alt="avatar">
+          </picture>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

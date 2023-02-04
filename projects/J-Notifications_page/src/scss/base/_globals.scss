@@ -1,0 +1,16 @@
+@use 'variables' as var;
+
+body {
+    font-family: var.$ff-Jakarta;
+    font-size: var.$fs-16;
+    background-color: var.$cl-VLGblue;
+}
+
+h1 {
+    font-size: var.$fs-24;
+    font-weight: var.$fw-800;
+}
+
+[class$="__container"] {
+    max-width: 1000px;
+}

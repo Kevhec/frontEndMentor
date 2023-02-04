@@ -1,0 +1,23 @@
+{
+  "name": "j-notifications_page",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --no-cache --open firefox",
+    "build": "parcel build --dist-dir public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "sass": "^1.58.0"
+  },
+  "dependencies": {
+    "@parcel/core": ">=2.8.3 <3.0.0",
+    "@parcel/transformer-sass": "^2.8.3",
+    "sharp": "^0.31.3"
+  }
+}

@@ -1,0 +1,30 @@
+$cl-red: #f65351;
+$cl-blue: #0a317b;
+$cl-white: #ffffff;
+$cl-VLGblue: #f7fafd;
+$cl-LGblue1: #e5effa;
+$cl-LGblue2: #dde7ee;
+$cl-Gblue: #939dae;
+$cl-DGblue: #5e6778;
+$cl-VDblue: #1c202b;
+
+
+/* Typography */
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf");
+}
+
+$ff-Jakarta: "Plus Jakarta Sans";
+$fw-500: 500;
+$fw-800: 800;
+$fs-14: 0.875rem;
+$fs-16: 1rem;
+$fs-24: 1.5rem;
+
+/* mediaq */
+@mixin mdq {
+    @media screen and (min-width: 64em) {
+        @content
+    }
+}
