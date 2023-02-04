@@ -23,12 +23,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        width: 100%;
         padding: var.$sz-15;
         color: var.$clr-primary-600;
 
         @include var.mdq {
-            width: 100%;
             padding: var.$sz-15 var.$sz-40;
         }
     }
