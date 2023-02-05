@@ -1,58 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./scripts/webp-avif-bg-support.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./sass/main.scss">
-  <title>Sunnyside agency landing page</title>
-  <link rel="shortcut icon" href="./assets/icons/favicon-32x32.png" type="image/x-icon">
-</head>
-<body>
-  <div class="overlay"></div>
-  <header class="header">
-    <div class="header__bar">
-      <figure class="header__logo">
-        <img src="assets/images/logo.svg" alt="sunnyside logo">
-      </figure>
-      <div class="header__main-nav">
-        <button class="hamb-button not-active">
-          <span class="hamb-button__span"></span>
-          <span class="hamb-button__span"></span>
-          <span class="hamb-button__span"></span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list">
-            <a href="#" class="nav__link">About</a>
-            <a href="#" class="nav__link">Services</a>
-            <a href="#" class="nav__link">Projects</a>
-            <a href="#" class="nav__link">Contact</a>
-          </ul>
-        </nav>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts/webp-avif-bg-support.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.scss" />
+    <title>Sunnyside agency landing page</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header class="header">
+      <div class="header__bar">
+        <figure class="header__logo">
+          <img src="assets/images/logo.svg" alt="sunnyside logo" />
+        </figure>
+        <div class="header__main-nav">
+          <button class="hamb-button not-active">
+            <span class="hamb-button__span"></span>
+            <span class="hamb-button__span"></span>
+            <span class="hamb-button__span"></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <a href="#" class="nav__link">About</a>
+              <a href="#" class="nav__link">Services</a>
+              <a href="#" class="nav__link">Projects</a>
+              <a href="#" class="nav__link">Contact</a>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    <h1 class="header__heading">
-      We are creatives
-    </h1>
-  </header>
-  <main class="main">
-    <div class="main__container">
+      <h1 class="header__heading">We are creatives</h1>
+    </header>
+    <main class="main">
       <div class="double-card">
-        <div class="double-card__section">
-          <h2 class="double-card__heading">
-            
-          </h2>
+        <div class="double-card__section double-card__section--bgY double-card__section--rightGrid">
+          <picture class="double-card__image">
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-transform.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-transform.jpg?as=webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-transform.jpg"
+              type="image/jpg"
+            />
+            <source
+              srcset="./assets/images/mobile/image-transform.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/images/mobile/image-transform.jpg?as=webp"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/mobile/image-transform.jpg"
+              alt="White egg on yellow background"
+              type="image/jpg"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
         <div class="double-card__section">
-
+          <div class="double-card__content double-card__content--mxW600
+          double-card__content--TextLeft">
+            <h2 class="double-card__heading double-card__heading--DBlText">Transform your brand</h2>
+            <p class="double-card__text double-card__text--GText
+            double-card__text--TextLeft">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#" class="double-card__link  double-card__link--uYellow
+            double-card__link--DBlText">Learn More</a>
+          </div>
         </div>
+      </div> <!-- double-card -- transform -->
+      <div class="double-card">
+        <div class="double-card__section double-card__section--bgR">
+          <picture class="double-card__image">
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-stand-out.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-stand-out.jpg?as=webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-stand-out.jpg"
+              type="image/jpg"
+            />
+            <source
+              srcset="./assets/images/mobile/image-stand-out.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/images/mobile/image-stand-out.jpg?as=webp"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/mobile/image-stand-out.jpg"
+              alt="Salmon color plastic cup"
+              type="image/jpg"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div class="double-card__section">
+          <div class="double-card__content double-card__content--mxW600
+          double-card__content--TextLeft">
+            <h2 class="double-card__heading">Stand out to the right audience</h2>
+            <p class="double-card__text double-card__text--GText">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places.</p>
+            <a href="#" class="double-card__link double-card__link--uRed">Learn More</a>
+          </div>
+        </div>
+      </div> <!-- double-card -- stand-out -->
+      <div class="double-card">
+        <div class="double-card__section double-card__section--bgG">
+          <picture class="double-card__image">
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-graphic-design.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-graphic-design.jpg?as=webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-graphic-design.jpg"
+              type="image/jpg"
+            />
+            <source
+              srcset="./assets/images/mobile/image-graphic-design.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/images/mobile/image-graphic-design.jpg?as=webp"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/mobile/image-graphic-design.jpg"
+              alt="Salmon color plastic cup"
+              type="image/jpg"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="double-card__content double-card__content--pAbsolute double-card__content--GrText
+          double-card__content--mxW375">
+            <h2 class="double-card__heading">Graphic Design</h2>
+            <p class="double-card__text double-card__text--GrText">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+          </div>
+        </div> <!-- graphic design -->
+        <div class="double-card__section double-card__section--bgB">
+          <picture class="double-card__image">
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-photography.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-photography.jpg?as=webp"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 64em)"
+              srcset="./assets/images/desktop/image-photography.jpg"
+              type="image/jpg"
+            />
+            <source
+              srcset="./assets/images/mobile/image-photography.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              srcset="./assets/images/mobile/image-photography.jpg?as=webp"
+              type="image/webp"
+            />
+            <img
+              src="./assets/images/mobile/image-photography.jpg"
+              alt="Salmon color plastic cup"
+              type="image/jpg"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+          <div class="double-card__content double-card__content--pAbsolute double-card__content--BlText
+          double-card__content--mxW375">
+            <h2 class="double-card__heading">Photography</h2>
+            <p class="double-card__text double-card__text--BlText">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </div> <!-- photography -->
       </div>
-    </div>
-  </main>
-  <script src="./scripts/main.js"></script>
-</body>
+    </main>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>

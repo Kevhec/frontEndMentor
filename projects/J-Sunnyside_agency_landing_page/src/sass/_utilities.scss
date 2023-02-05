@@ -1,0 +1,35 @@
+@use "./base/variables" as var;
+
+[class$="--mxW375"] {
+    max-width: 375;
+}
+
+[class$="--mxW600"] {
+    max-width: 600;
+}
+
+[class$="--GText"] {
+    color: var.$clr-neutral-400;
+}
+
+[class$="--GrText"] {
+    color: var.$clr-primary-500;
+}
+
+[class$="--BlText"] {
+    color: var.$clr-primary-300;
+}
+
+[class$="--DBlText"] {
+    color: var.$clr-neutral-500;
+}
+
+@include var.mdq {
+    [class$="--rightGrid"] {
+        grid-column: 2 / 3;
+    }
+
+    [class$="--TextLeft"] {
+        text-align: left;
+    }
+}

@@ -1,4 +1,4 @@
-@use '../base/variables' as var;
+@use "../base/variables" as var;
 
 .header {
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
         display: block;
         place-content: unset;
     }
-    
+
     &__bar {
         position: fixed;
         top: 0;
@@ -25,7 +25,8 @@
         align-items: center;
         width: 100%;
         padding: var.$sz-15;
-        color: var.$clr-primary-600;
+        background-color: var.$clr-primary-600;
+        z-index: 1000;
 
         @include var.mdq {
             padding: var.$sz-15 var.$sz-40;
@@ -50,7 +51,7 @@
             background-size: contain;
             display: block;
             height: var(--arrow-sz);
-            width: calc(var(--arrow-sz)/3);
+            width: calc(var(--arrow-sz) / 3);
             margin-inline: auto;
             margin-top: var.$sz-40;
 

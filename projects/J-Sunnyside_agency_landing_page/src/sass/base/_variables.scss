@@ -2,8 +2,10 @@ $clr-primary-100: #fe7867;
 $clr-primary-200: #fad400;
 $clr-primary-300: #19536b;
 $clr-primary-400: #458c7e;
+$clr-primary-402: #9fdccd;
 $clr-primary-500: #25564b;
-$clr-primary-600: #3DBEFE;
+$clr-primary-600: #3dbefe;
+$clr-primary-602: #64ccff;
 
 $clr-neutral-100: #ffffff;
 $clr-neutral-200: #a7abae;
@@ -11,14 +13,14 @@ $clr-neutral-300: #818498;
 $clr-neutral-400: #5a636c;
 $clr-neutral-500: #23303e;
 
-$ff-fraunces: 'Fraunces', sans-serif;
-$ff-barlow: 'Barlow', sans-serif;
+$ff-fraunces: "Fraunces", sans-serif;
+$ff-barlow: "Barlow", sans-serif;
 $fs-14: 0.875rem;
-$fs-16: 1.000rem;
+$fs-16: 1rem;
 $fs-18: 1.125rem;
-$fs-24: 1.500rem;
-$fs-32: 2.000rem;
-$fs-40: 2.500rem;
+$fs-24: 1.5rem;
+$fs-32: 2rem;
+$fs-40: 2.5rem;
 $fs-50: 3.125rem;
 $fw-600: 600;
 $fw-700: 700;
@@ -27,14 +29,14 @@ $fw-900: 900;
 $sz-05: 0.313rem;
 $sz-10: 0.625rem;
 $sz-15: 0.938rem;
-$sz-20: 1.250rem;
+$sz-20: 1.25rem;
 $sz-25: 1.563rem;
 $sz-30: 1.875rem;
-$sz-40: 2.500rem;
+$sz-40: 2.5rem;
 $sz-50: 3.125rem;
 
 @mixin mdq {
     @media screen and (min-width: 64em) {
-        @content
+        @content;
     }
 }

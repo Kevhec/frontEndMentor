@@ -1,4 +1,4 @@
-@use '../base/variables' as var;
+@use "../base/variables" as var;
 
 .nav {
     width: 90%;
@@ -11,6 +11,7 @@
     clip-path: polygon(0% 5%, 95% 5%, 100% 0%, 100% 100%, 0% 100%);
     background-color: var.$clr-neutral-100;
     transition: height 200ms ease-out, padding 200ms ease-out;
+    z-index: 1000;
 
     @include var.mdq {
         position: unset;
@@ -23,7 +24,7 @@
     }
 
     &.active {
-        padding: calc(var.$sz-40 +  var.$sz-05) var.$sz-30 var.$sz-30;
+        padding: calc(var.$sz-40 + var.$sz-05) var.$sz-30 var.$sz-30;
         overflow: visible;
 
         .nav__link {
