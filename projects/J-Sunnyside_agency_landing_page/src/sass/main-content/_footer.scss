@@ -1,0 +1,37 @@
+@use "../base/variables" as var;
+
+.footer {
+    background-color: var.$clr-primary-402;
+    padding: 3.5rem;
+
+
+    &__container {
+        width: 90%;
+        max-width: 375px;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__nav {
+        color: var.$clr-primary-400;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 3.2rem;
+    }
+
+    &__nav-link {
+        font-family: var.$ff-barlow;
+
+        @include var.mdq {
+            &:hover {
+                color: var.$clr-neutral-100;
+            }
+        }
+    }
+}

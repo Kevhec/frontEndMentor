@@ -39,10 +39,18 @@ ul {
     padding: unset;
 }
 
-/* [class$="__container"] {
-    width: 90%;
-    margin-inline: auto;
-} */
+.logo {
+    width: 180px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(86deg) brightness(109%) contrast(101%);
+    img {
+        width: 100%;
+        
+    }
+
+    &--green {
+        filter: invert(31%) sepia(50%) saturate(492%) hue-rotate(116deg) brightness(106%) contrast(87%);
+    }
+}
 
 .overlay {
     position: fixed;

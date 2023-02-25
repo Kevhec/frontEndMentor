@@ -1,0 +1,36 @@
+@use "../base/variables" as var;
+
+.testimonials {
+    text-align: center;
+    padding: var.$sz-50 0;
+
+    @include var.mdq {
+        padding: calc(var.$sz-50 * 2) 0;
+    }
+    
+    &__heading {
+        font-size: var.$fs-18;
+        font-weight: var.$fw-900;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var.$clr-neutral-200;
+        margin-bottom: var.$sz-50;
+
+        @include var.mdq {
+            letter-spacing: 6px;
+        }
+    }
+
+    &__container {
+        width: 88%;
+        max-width: 1150px;
+        margin-inline: auto;
+
+        @include var.mdq {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var.$sz-40;
+        }
+    }
+
+}

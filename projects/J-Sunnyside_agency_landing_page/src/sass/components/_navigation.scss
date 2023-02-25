@@ -61,6 +61,16 @@
             padding: var.$sz-15 var.$sz-30;
             color: var.$clr-neutral-100;
             font-size: var.$fs-16;
+
+            &:hover {
+                font-family: var.$ff-fraunces;
+                font-size: var.$fs-14;
+                text-transform: uppercase;
+                font-weight: var.$fw-700;
+                border-radius: 50px;
+                background-color: #ffffff80;
+                color: var.$clr-neutral-100;
+            }
         }
 
         &--accent {

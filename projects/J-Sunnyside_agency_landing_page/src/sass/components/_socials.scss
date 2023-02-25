@@ -1,0 +1,15 @@
+@use "../base/variables" as var;
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+
+    @include var.mdq {
+        &__icon {
+            &:hover {
+                filter: invert(100%) sepia(0%) saturate(3%) hue-rotate(125deg) brightness(201%) contrast(101%);
+            }
+        }
+    }
+}

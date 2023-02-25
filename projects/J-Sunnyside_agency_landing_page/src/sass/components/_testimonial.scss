@@ -1,0 +1,41 @@
+@use "../base/variables" as var;
+
+.testimonial {
+    padding: var.$sz-20 0;
+    margin-bottom: var.$sz-30;
+
+    @include var.mdq {
+        margin-bottom: unset;
+    }
+    
+    &__image {
+        $image-width: 144px;
+        width: calc($image-width * .6);
+        border-radius: 50%;
+        overflow: hidden;
+        margin-inline: auto;
+        margin-bottom: var.$sz-40;
+    }
+
+    &__text {
+        font-size: var.$fs-18;
+        line-height: 1.8;
+        color: var.$clr-neutral-400;
+        margin-bottom: var.$sz-30;
+    }
+
+    &__author {
+        font-family: var.$ff-fraunces;
+        font-size: var.$fs-18;
+        color: var.$clr-neutral-500;
+        margin-bottom: var.$sz-10;
+
+        @include var.mdq {
+            margin-bottom: var.$sz-05;
+        }
+    }
+
+    &__author-profession {
+        color: var.$clr-neutral-300;
+    }
+}

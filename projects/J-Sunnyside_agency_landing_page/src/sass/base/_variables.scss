@@ -40,3 +40,33 @@ $sz-50: 3.125rem;
         @content;
     }
 }
+
+@mixin DBlText {
+    &--DBlText {
+        color: $clr-neutral-500;
+    }
+}
+
+@mixin GText {
+    &--GText {
+        color: $clr-neutral-400;
+    }
+}
+
+@mixin BlText {
+    &--BlText {
+        color: $clr-primary-300;
+    }
+}
+
+@mixin GrText {
+    &--GrText {
+        color: $clr-primary-500;
+    }
+}
+
+@mixin TextLeft {
+    &--TextLeft {
+        text-align: left;
+    }
+}
