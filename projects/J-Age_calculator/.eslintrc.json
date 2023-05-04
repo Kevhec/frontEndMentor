@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "./node_modules/ts-standard/eslintrc.json"
+  ],
+  "parserOptions": {
+    "project": "./projects/J-Age_calculator/tsconfig.json"
+  },
+  "rules": {
+    // your custom rules here
+  }
+}

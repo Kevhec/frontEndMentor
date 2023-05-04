@@ -1,0 +1,149 @@
+@use './variables' as v;
+
+.card {
+  width: 90%;
+  max-width: 550px;
+  margin-inline: auto;
+  background-color: v.$cl-neutral-white;
+  padding: v.rem(20);
+  border-radius: 16px 16px 64px 16px;
+
+  @media screen and (min-width: v.$bp-desktop--wide) {
+    padding: v.rem(32);
+    border-radius: 18px 18px 100px 18px;
+  }
+
+  &__form {
+    display: flex;
+    gap: v.rem(16);
+
+    @media screen and (min-width: v.$bp-desktop--small) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__label {
+    flex: 1;
+    font-size: v.rem(12);
+    font-weight: v.$fw-700;
+    letter-spacing: v.rem(3);
+    color: v.$cl-neutral-grey--smokey;
+
+    &--error {
+      color: v.$cl-primary-red--light;
+    }
+
+    @media screen and (min-width: v.$bp-desktop--small) {
+      flex: 0;
+      flex-basis: 100px;
+    }
+  }
+  
+  &__input {
+    width: 100%;
+    max-width: 100px;
+    margin-top: v.rem(4);
+    padding: v.rem(8);
+    border-radius: 10px;
+    border: 1px solid v.$cl-neutral-grey--light;
+    font-size: v.rem(18);
+    line-height: 1;
+    caret-color: v.$cl-primary-purple;
+
+    &:is(:focus-visible, :focus) {
+      outline: 1px solid v.$cl-primary-purple;
+      border-color: transparent;
+    }
+
+    &--error {
+      border-color: v.$cl-primary-red--light;
+
+      &:is(:focus-visible, :focus) {
+        outline: 1px solid v.$cl-primary-red--light;
+        border-color: transparent;
+      }
+    }
+
+    @media screen and (min-width: v.$bp-desktop--wide) {
+      font-size: v.rem(24);
+      padding: v.rem(8) v.rem(14);
+    }
+  }
+
+  &__error {
+    color: v.$cl-primary-red--light;
+    font-size: v.rem(8);
+    font-weight: v.$fw-400;
+    font-style: italic;
+    letter-spacing: normal;
+    margin-top: v.rem(5);
+  }
+
+  &__divider {
+    margin: v.rem(32) 0;
+    position: relative;
+
+    @media screen and (min-width: v.$bp-desktop--small) {
+      margin: 0;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%0);
+      z-index: 1;
+      width: 100%;
+      border-top: 1px solid v.$cl-neutral-grey--light;
+    }
+  }
+
+  &__submitButton {
+    $button_size: v.rem(50);
+    position: relative;
+    z-index: 2;
+    display: grid;
+    place-content: center;
+    border: unset;
+    border-radius: 50%;
+    margin-inline: auto;
+    padding: v.rem(10);
+    width: $button_size;
+    aspect-ratio: 1 / 1;
+    background-color: v.$cl-primary-purple;
+    transition: background-color 100ms ease-in;
+
+    &:is(:hover, :active) {
+      background-color: v.$cl-neutral-black--off;
+    }
+
+    @media screen and (min-width: v.$bp-desktop--small) {
+      margin-inline-end: unset;
+      $button_size: v.rem(55);
+      width: $button_size;
+    }
+
+    img {
+      width: 20px;
+      @media screen and (min-width: v.$bp-desktop--small) {
+        width: calc($button_size - v.rem(30));
+        
+      }
+    }
+  }
+
+  &__result {
+    font-size: v.rem(40);
+    font-weight: v.$fw-800;
+    font-style: italic;
+    
+    @media screen and (min-width: v.$bp-desktop--wide) {
+      font-size: v.rem(60);
+    }
+
+    &Number {
+      color: v.$cl-primary-purple;
+    }
+  }
+}

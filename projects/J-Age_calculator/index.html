@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/scss/main.scss">
+    <link rel="shortcut icon" href="/favicon-32x32.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <h1 class="visually-hidden">Age calculator</h1>
+      <div class="card">
+        <div class="card__formContainer">
+          <form class="card__form" id="birthdayForm">
+            <label class="card__label">
+              DAY
+              <input type="number" name="day" class="card__input" placeholder="DD">
+            </label>
+            <label class="card__label">
+              MONTH
+              <input type="number" name="month" class="card__input" placeholder="MM">
+            </label>
+            <label class="card__label">
+              YEAR
+              <input type="number" name="year" class="card__input" placeholder="YYYY">
+            </label>
+          </form>
+        </div>
+        <div class="card__divider">
+          <button type="submit" form="birthdayForm" class="card__submitButton">
+            <img src="./src/assets/images/icon-arrow.svg" alt="">
+            <span class="visually-hidden">Get your age</span>
+          </button>
+        </div>
+        <div class="card__results">
+          <p class="card__result">
+            <span class="card__resultNumber" id="years_result">- -</span>
+            years
+          </p>
+          <p class="card__result">
+            <span class="card__resultNumber" id="months_result">- -</span>
+            months
+          </p>
+          <p class="card__result">
+            <span class="card__resultNumber" id="days_result">- -</span>
+            days
+          </p>
+        </div>
+      </div>
+    </main>
+    
+    <script type="module" src="/src/main.ts"></script>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br />
+        Coded by <a href="https://github.com/Kevhec" target="_blank">KevHec</a>.
+      </br>
+    </footer>
+  </body>
+</html>

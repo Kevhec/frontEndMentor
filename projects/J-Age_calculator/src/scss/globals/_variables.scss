@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Poppins';
+  src:
+    url(../../mentorFiles/fonts/Poppins-Bold.ttf)
+    url(../../mentorFiles/fonts/Poppins-BoldItalic.ttf)
+    url(../../mentorFiles/fonts/Poppins-ExtraBold.ttf)
+    url(../../mentorFiles/fonts/Poppins-ExtraBoldItalic.ttf)
+    url(../../mentorFiles/fonts/Poppins-Italic.ttf)
+    url(../../mentorFiles/fonts/Poppins-Regular.ttf);
+}
+
+// colors
+$cl-primary-purple: hsl(259, 100%, 65%);
+$cl-primary-red--light: hsl(0, 100%, 67%);
+
+$cl-neutral-white: hsl(0, 0%, 100%);
+$cl-neutral-white--off: hsl(0, 0%, 94%);
+$cl-neutral-grey--light: hsl(0, 0%, 86%);
+$cl-neutral-grey--smokey: hsl(0, 1%, 44%);
+$cl-neutral-black--off: hsl(0, 0%, 8%);
+
+// Typography
+$font-family--poppins: 'Poppins', sans-serif;
+
+// FontWeights
+$fw-400: 400;
+$fw-700: 700;
+$fw-800: 800;
+
+// Breakpoints
+$bp-mobile: 375px;
+$bp-desktop--small: 1024px;
+$bp-desktop--wide: 1440px;
+
+// functions
+@function rem($px) {
+  $result: calc($px / 16) + rem;
+  @return $result;
+}
+
+// Utility classes
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
