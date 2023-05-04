@@ -14,7 +14,6 @@ This is a solution to the [Age calculator app]( https://www.frontendmentor.io/ch
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
