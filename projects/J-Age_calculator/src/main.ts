@@ -24,8 +24,6 @@ const concatDateFields = (fields: Record<string, string>): string => {
 
 function dateValidations (fields: Record<string, string>, formattedDate: string): boolean {
   const { year, month, day } = fields
-  const fieldsKeys = Object.keys(fields)
-  const fieldsValues = Object.values(fields)
   const currentYear = new Date().getFullYear()
   const numberDay = Number(day)
   const numberMonth = Number(month)
@@ -41,7 +39,7 @@ function dateValidations (fields: Record<string, string>, formattedDate: string)
   //  -- Check if provided date is in the future
   //  -- Check if provided date is valid
   if (
-    !fieldsValues.some(value => value !== '') &&
+    Object.values(fields).every(value => value === '') &&
     (new Date(formattedDate).getTime() > new Date().getTime() ||
     isNaN(new Date(formattedDate).getTime()))
   ) {
@@ -50,7 +48,7 @@ function dateValidations (fields: Record<string, string>, formattedDate: string)
   }
 
   // Individual fields validations
-  fieldsKeys.forEach(key => {
+  Object.keys(fields).forEach(key => {
     const input: HTMLInputElement | null = document.querySelector(`.card__input[name="${key}"`)
     const label = input?.parentElement
 

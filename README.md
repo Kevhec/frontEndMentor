@@ -1,6 +1,6 @@
-# My Challenges 🧑‍🎓
+# My Challenges 🏆
 
-These are my [FrontendMentor](https://www.frontendmentor.io/) challenges 🏋️. **FrontendMentor** is a *"platform that provides front-end challenges that include professional web designs"*.
+These are the front-end design projects I completed on [FrontendMentor](https://www.frontendmentor.io/) 🏋️. **FrontendMentor** is a *"platform that provides front-end challenges that include professional web designs"*.
 
 ## Index
 * [Newbie Challenges](#newbie-challenges) 👶
@@ -8,11 +8,13 @@ These are my [FrontendMentor](https://www.frontendmentor.io/) challenges 🏋️
 * [Intermediate Challenges](#intermediate-challenges) 🧑‍🚀
 
 ### **Newbie Challenges**
+This section represents where it all started, my first challenges ordered by completion. My learning process through the realization of these challenges was indescriptable!
+
 | # | Challenge | Solution page | Tech | Code | Live Demo |
 |--- |--- | --- | --- | --- | --- |
 | **1** |QR Card Component | [Solution](https://www.frontendmentor.io/solutions/qr-code-component-9BbYoZrfbJ) | HTML - CSS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-QR_card_component) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-QR_card_component/index.html) |
 | **2** | NFT Preview | [Solution](https://www.frontendmentor.io/solutions/nft-preview-card-component-TtG7MbeJKt) | HTML - CSS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-NFT_preview_component) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-NFT_preview_component/index.html) |
-| **3** | Order Summary | [Solution]() | HTML - CSS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-Order_summary_component) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-Order_summary_component/index.html) |
+| **3** | Order Summary | [Solution](https://kevhec.github.io/frontEndMentor/projects/N-Order_summary_component/index.html) | HTML - CSS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-Order_summary_component) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-Order_summary_component/index.html) |
 | **4** | Chanel Essence Card | [Solution](https://www.frontendmentor.io/solutions/product-preview-card-component-HnxGXVhRkI) | HTML - CSS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-Chanel_essence_card) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-Chanel_essence_card/) |
 | **5** | Stats Preview Card | [Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-41kQX3O0jr) | HTML - CSS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-Stats_preview_card_component) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-Stats_preview_card_component/) |
 | **6** | Interactive Rating | [Solution](https://www.frontendmentor.io/solutions/interactive-rating-component-tN0dITimX_) | HTML - CSS - JS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/N-Interactive_Rating_Component) | [Demo](https://kevhec.github.io/frontEndMentor/projects/N-Interactive_Rating_Component/) |
@@ -31,6 +33,8 @@ These are my [FrontendMentor](https://www.frontendmentor.io/) challenges 🏋️
 &nbsp;
 
 ### **Junior Challenges**
+These challenges have more complex layouts including responsive web design, also API consumptions.
+
 | # | Challenge | Solution page | Tech | Code | Live Demo |
 | --- | --- | --- | --- | --- | --- |
 | **1** | News Homepage | [Solution](https://www.frontendmentor.io/solutions/news-homepage-STCSh6wz7K) | HTML - CSS - JS | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/J-News_homepage) | [Demo](https://www.frontendmentor.io/solutions/news-homepage-STCSh6wz7K) |
@@ -41,6 +45,8 @@ These are my [FrontendMentor](https://www.frontendmentor.io/) challenges 🏋️
 &nbsp;
 
 ### **Intermediate Challenges**
+Challenges with more complex logic and design, API comsuption and more reasons to try modern technologies
+
 | # | Challenge | Solution page | Tech | Code | Live Demo |
 | --- | --- | --- | --- | --- | --- |
 | **1** | IP Tracker | [Solution](https://www.frontendmentor.io/solutions/ip-tracker-_JJH8yN2fh) | HTML - SCSS - JS - VITE | [Code](https://github.com/Kevhec/frontEndMentor/tree/master/projects/I-Ip_address_tracker) | [Demo](https://iptracker-kevhec.netlify.app) |
