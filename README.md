@@ -3,9 +3,9 @@
 These are my [FrontendMentor](https://www.frontendmentor.io/) challenges 🏋️. **FrontendMentor** is a *"platform that provides front-end challenges that include professional web designs"*.
 
 ## Index
-* [Newbie Challenges](#newbie-challenges)
-* [Junior Challenges](#junior-challenges)
-* [Intermediate Challenges](#intermediate-challenges)
+* [Newbie Challenges](#newbie-challenges) 👶
+* [Junior Challenges](#junior-challenges) 👦
+* [Intermediate Challenges](#intermediate-challenges) 🧑‍🚀
 
 ### **Newbie Challenges**
 | # | Challenge | Solution page | Tech | Code | Live Demo |
