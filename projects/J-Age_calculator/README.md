@@ -34,6 +34,7 @@ Users should be able to:
 ### Screenshots 🖼️
 
 ![](./screenshots/Opera%20Captura%20de%20pantalla_2023-05-04_115427_age-calculator-kevhec.netlify.app.png)
+![](./screenshots/Opera%20Captura%20de%20pantalla_2023-05-04_122923_age-calculator-kevhec.netlify.app.png)
 ![](./screenshots/Opera%20Captura%20de%20pantalla_2023-05-04_115608_age-calculator-kevhec.netlify.app.png)
 ![](./screenshots/Opera%20Captura%20de%20pantalla_2023-05-04_115627_age-calculator-kevhec.netlify.app.png)
 ![](./screenshots/Opera%20Captura%20de%20pantalla_2023-05-04_115725_age-calculator-kevhec.netlify.app.png)
