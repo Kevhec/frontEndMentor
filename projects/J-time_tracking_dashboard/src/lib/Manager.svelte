@@ -44,6 +44,10 @@
         flex-grow: 2;
         flex-direction: column;
       }
+
+      @include mdq($bp-laptop) {
+        padding: rem(28) rem(28);
+      }
     }
 
     &__image {
