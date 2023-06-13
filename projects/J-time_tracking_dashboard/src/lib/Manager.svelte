@@ -92,7 +92,7 @@
 <div class="card">
   <div class="card__header">
     <figure class="card__image">
-      <img src="image-jeremy.png" alt="Jeremy Robson" width="50px" style="aspect-ratio: 1/1;">
+      <img src="image-jeremy.png" alt="Jeremy Robson" width="50" style="aspect-ratio: 1/1;">
     </figure>
     <div class="card__user">
       <p>

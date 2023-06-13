@@ -40,9 +40,20 @@
     transform: translateX(-50%);
     padding: 1rem 0;
   }
+
+  h1 {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+  }
 </style>
 
 <main>
+  <h1>Time Managment Dashboard</h1>
   <Manager on:timeframeChange={handleMessage} />
 
   {#each data as { title, timeframes }}
