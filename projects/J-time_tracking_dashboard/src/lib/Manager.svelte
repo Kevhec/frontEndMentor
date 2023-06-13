@@ -46,7 +46,7 @@
       }
 
       @include mdq($bp-laptop) {
-        padding: rem(28) rem(42) rem(28) rem(28);
+        padding: rem(28) rem(58) rem(28) rem(28);
       }
     }
 
