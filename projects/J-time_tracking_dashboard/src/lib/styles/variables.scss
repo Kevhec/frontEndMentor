@@ -1,0 +1,32 @@
+// Colors
+$p-blue: hsl(246, 80%, 60%);
+$p-bg--play: hsl(195, 74%, 62%);
+$p-bg--work: hsl(15, 100%, 70%);
+$p-bg--study: hsl(348, 100%, 68%);
+$p-bg--exercise: hsl(145, 58%, 55%);
+$p-bg--social: hsl(264, 64%, 52%);
+$p-bg--selfCare: hsl(43, 84%, 65%);
+
+$n-very_dark_blue: hsl(226, 43%, 10%);
+$n-dark_blue: hsl(235, 46%, 20%);
+$n-desaturated_blue: hsl(235, 45%, 61%);
+$n-pale_blue: hsl(236, 100%, 87%);
+$n-white: #efefef;
+
+$ff-rubik: 'Rubik', sans-serif;
+
+@function rem($px) {
+  $result: calc($px / 16) + rem;
+  @return $result;
+}
+
+@mixin mdq($bp) {
+  @media (min-width: $bp) {
+      @content;
+  }
+}
+
+$bp-mobile: rem(375);
+$bp-tablet: rem(768);
+$bp-laptop: rem(1024);
+$bp-desktop: rem(1440);

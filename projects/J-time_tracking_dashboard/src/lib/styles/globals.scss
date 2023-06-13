@@ -1,0 +1,24 @@
+@use './variables.scss' as *;
+
+body {
+  padding: rem(70) rem(20);
+  background-color: $n-very_dark_blue;
+  font-family: $ff-rubik;
+  font-size: rem(16);
+  color: $n-white;
+  position: relative;
+
+  @include mdq($bp-laptop) {
+    min-height: 100vh;
+    padding: 0 rem(20);
+  }
+}
+
+#app {
+  @include mdq($bp-laptop) {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results Summary</title>
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main class="component even-columns">
+    <div class="component__column component__column--result">
+      <h1 class="component__heading">Your Results</h1>
+      <div class="result">
+        <p class="result__actual">76</p>
+        <p class="result__max">of 100</p>
+      </div>
+      <p class="result__textual">Great</p>
+      <p class="result__content">You scored higher than 65% of the people who have taken these tests.</p>
+    </div> <!-- column -->
+    <div class="component__column component__column--summary">
+      <h2 class="component__heading component__heading--blue">Summary</h2>
+      <div class="category category--reaction">
+        <div class="category__description">
+          <img src="./assets/images/icon-reaction.svg">
+          <p class="category__name category__name--reaction">Reaction</p>
+        </div>
+        <p class="category__result"><span id="resultValueReaction" class="category__result--span"></span> / 100</p>
+      </div> <!-- category -->
+      <div class="category category--memory">
+        <div class="category__description">
+          <img src="./assets/images/icon-memory.svg">
+          <p class="category__name category__name--memory">Memory</p>
+        </div>
+        <p class="category__result"><span id="resultValueMemory" class="category__result--span"></span> / 100</p>
+      </div> <!-- category -->
+      <div class="category category--verbal">
+        <div class="category__description">
+          <img src="./assets/images/icon-verbal.svg">
+          <p class="category__name category__name--verbal">Verbal</p>
+        </div>
+        <p class="category__result"><span id="resultValueVerbal" class="category__result--span"></span> / 100</p>
+      </div> <!-- category -->
+      <div class="category category--visual">
+        <div class="category__description">
+          <img src="./assets/images/icon-visual.svg">
+          <p class="category__name category__name--visual">Visual</p>
+        </div>
+        <p class="category__result"><span id="resultValueVisual" class="category__result--span"></span> / 100</p>
+      </div> <!-- category -->
+      <button class="component__button">Continue</button>
+    </div> <!-- column -->
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
