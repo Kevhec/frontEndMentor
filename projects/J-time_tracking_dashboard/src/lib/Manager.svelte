@@ -73,10 +73,6 @@
         line-height: 1.2;
       }
 
-      @include mdq($bp-desktop) {
-        font-size: rem(42);
-      }
-
       span {
         display: block;
         font-size: rem(14);
