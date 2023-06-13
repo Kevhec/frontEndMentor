@@ -101,7 +101,7 @@
     <div class="card__user">
       <p>
         <span>Report for</span>
-        Jeremy Robson
+        Jeremy <br/> Robson
       </p>
     </div>
   </div>
